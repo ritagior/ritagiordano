@@ -9,4 +9,8 @@ navbar:
       href: index.html
     - text: "About"
       href: about.html
+    - text: "Portfolio"
+      menu:
+        - text: "World fertility rate"
+          href:  World_fertility.html
 output: distill::distill_article

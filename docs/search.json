@@ -6,7 +6,7 @@
       "description": "Some additional details about the website",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-07-11T10:06:09+01:00"
+      "last_modified": "2021-07-11T10:13:44+01:00"
     },
     {
       "path": "index.html",
@@ -14,7 +14,15 @@
       "description": "Welcome to the website. I hope you enjoy it!\n",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-07-11T10:06:09+01:00"
+      "last_modified": "2021-07-11T10:13:44+01:00"
+    },
+    {
+      "path": "World_fertility.html",
+      "title": "World fertility rate",
+      "description": "How the fertility rate changed in the last 60 years.\n",
+      "author": [],
+      "contents": "\nThe fertility in the 2010s has a step decreasing if comparing with the 1060s. Unsurprisingly high income countries show a lower fertility rate than low income countries. Countries were women have more possibility to have an higher education show that they conceive less child compared to low income.\n\n\n\n\n\n\n",
+      "last_modified": "2021-07-11T10:13:47+01:00"
     }
   ],
   "collections": []

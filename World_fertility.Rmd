@@ -1,0 +1,107 @@
+---
+title: "World fertility rate"
+description: |
+  How the fertility rate changed in the last 60 years.
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+The fertility in the 2010s has a step decreasing if comparing with the 1060s.
+Unsurprisingly high income countries show a lower fertility rate than low income countries. Countries were women have more possibility to have an higher education show that they conceive less child compared to low income.
+
+```{r, message = FALSE, echo = FALSE, warning = FALSE, fig.width= 9, fig.height=6}
+library(readxl)
+library(tidyverse)
+library(GenderInfer)
+
+data <- read_excel("../../DataViz/Fertility Rate Data.xlsx")
+
+count_income <- data %>% count(IncomeGroup)
+
+data_2 <- data %>% group_by(IncomeGroup) %>%
+  summarise_if(is.numeric, mean, na.rm = TRUE)
+
+income <- data_2 %>% pivot_longer(!IncomeGroup,
+                                  names_to = "Years",
+                                  values_to = "count") %>%
+  mutate(Years = as.numeric(Years))
+
+## define year range to make the comparision
+range <- seq(1960,1969)
+
+baselines<- bind_cols(income %>%
+  filter(IncomeGroup == "High income",
+         Years %in% range) %>%
+  summarise(baseline_high = mean(count)),
+  income %>%
+    filter(IncomeGroup == "Upper middle income",
+           Years %in% range) %>%
+    summarise(baseline_upper = mean(count)),
+  income %>%
+    filter(IncomeGroup == "Lower middle income",
+           Years %in% range) %>%
+    summarise(baseline_lower = mean(count)),
+  income %>%
+    filter(IncomeGroup == "Low income",
+           Years %in% range) %>%
+    summarise(baseline_low = mean(count))
+  )
+
+baselines_df <- baselines %>%
+  pivot_longer(cols = starts_with("baseline"),
+                names_to = "baseline",
+               values_to = "value") %>%
+  mutate(baseline = gsub("baseline_", "", baseline)) %>%
+  mutate(baseline = case_when(baseline == "high" ~ "High income",
+                              baseline == "upper" ~ "Upper middle income",
+                              baseline == "lower" ~ "Lower middle income",
+                              baseline == "low" ~ "Low income",
+                              TRUE ~ baseline))
+## create data with
+range_2010 <- seq(2010, 2019)
+
+fertility <- income %>%
+  filter(Years %in% range_2010) %>%
+  group_by(IncomeGroup) %>%
+  mutate(values = mean(count)) %>%
+  distinct(IncomeGroup, values)
+
+ggplot() +
+  geom_bar(aes(x = reorder(baseline, -value), y = value, fill = "#D7191C"), data = baselines_df,
+           width = 0.55, stat = "identity", show.legend = FALSE) +
+  geom_bar(aes(x = IncomeGroup, y = values, fill = "#512B58"),
+           data = fertility ,
+           stat = "identity", width = 0.4) +
+  scale_fill_manual(values=c(alpha("#D7191C", .4), alpha("#512B58", .5)),
+                    labels = c("2010-2019", "1960-1969"), name = "Years range") +
+  guides(fill = guide_legend(override.aes = list(alpha = 0.5))) +
+  theme(axis.title.x = element_text( size=20),
+        axis.text.x  = element_text(size=16),
+        axis.title.y = element_text( size=20),
+        axis.text.y  = element_text(size=16),
+        legend.title = element_text(size = 16),
+        legend.text = element_text(size = 12)) +
+  theme(text = element_text(color = "navy"),
+          panel.background = element_rect(fill = "white"),
+          panel.grid.major.x = element_line(color = "grey"),
+          panel.grid.minor.x = element_line(color = "grey",
+                                            linetype = "dashed"),
+          panel.grid.major.y = element_blank(),
+          panel.grid.minor.y = element_blank(),
+          axis.ticks = element_blank(),
+          strip.background = element_rect(fill = "white", color="grey"),
+        legend.position="bottom", legend.direction="horizontal") +
+  xlab("Income") + ylab("Fertility rate") + coord_flip() +
+  ggtitle("World fertility: comparision between 1960s and 2010s ") +
+  theme(plot.title = element_text(size = 20, face = "bold")) +
+  labs(caption = "The Data World Bank")
+```
+
+
+
+
+
+
