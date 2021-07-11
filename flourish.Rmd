@@ -1,0 +1,22 @@
+---
+title: "Untitled"
+description: |
+  A new article created using the Distill format.
+
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+```{r}
+htmltools::includeHTML("flourish2.html")
+```
+
+
+```{r}
+htmltools::includeHTML("test.html")
+```
+

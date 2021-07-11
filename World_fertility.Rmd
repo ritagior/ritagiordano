@@ -7,9 +7,11 @@ output: distill::distill_article
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+
+htmltools::includeHTML("test.html")
 ```
 
-The fertility in the 2010s has a step decreasing if comparing with the 1060s.
+The fertility in the 2010s has a step decreasing if comparing with the 1960s.
 Unsurprisingly high income countries show a lower fertility rate than low income countries. Countries were women have more possibility to have an higher education show that they conceive less child compared to low income.
 
 ```{r, message = FALSE, echo = FALSE, warning = FALSE, fig.width= 9, fig.height=6}
@@ -92,13 +94,17 @@ ggplot() +
           panel.grid.major.y = element_blank(),
           panel.grid.minor.y = element_blank(),
           axis.ticks = element_blank(),
-          strip.background = element_rect(fill = "white", color="grey"),
+          strip.background = element_rect(fill = "white", color = "grey"),
         legend.position="bottom", legend.direction="horizontal") +
   xlab("Income") + ylab("Fertility rate") + coord_flip() +
   ggtitle("World fertility: comparision between 1960s and 2010s ") +
   theme(plot.title = element_text(size = 20, face = "bold")) +
   labs(caption = "The Data World Bank")
+
+
+htmltools::includeHTML("flourish2.html")
 ```
+
 
 
 

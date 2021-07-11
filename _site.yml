@@ -13,4 +13,6 @@ navbar:
       menu:
         - text: "World fertility rate"
           href:  World_fertility.html
+        - text: "Fertility: Floruish chart"
+          href: flourish.html
 output: distill::distill_article
