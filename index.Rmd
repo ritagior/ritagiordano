@@ -1,8 +1,10 @@
 ---
-title: "Portfolio"
+title: "About me"
 description: |
-  Welcome to the website. I hope you enjoy it!
-site: distill::distill_website
+site: 
+  distill::distill_website:
+    self_contained: false
+    anchor_sections: FALSE
 ---
 
 ```{r setup, include=FALSE}
@@ -16,3 +18,14 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ```
 
+```{r, echo=FALSE, fig.align='center'}
+knitr::include_graphics("img/photo.jpg")
+```
+
+
+I am Rita a physicist turned data scientist and currently based in UK.
+Life bring me traveling across Europe, from the highest volcano in Europe where I graduated in Physics I landed to the French Alps to do a PhD at the European Synchrotron Radiation Facility (ESRF) in statistics and physics applied to structural biology. From alps to alps I did my first postdoc at the Swiss Light Source.
+Later on I moved to the capital of Europe to discover delicious food and beautiful vineyard to start a career in biostatistics. Not tired to travel and discover new place I decide to come back to research and start a second post doc in one of the oldest university in Europe so I went to Cambridge. From there continue my European tour and after a parental leave I start my data scientist adventure in Karlsruhe.
+Every thing has  a start and end so I come back to Strasbourg to start a life a data scientist freelance. Lastly I move again to Cambridge to work as data scientist for the Royal Society of Chemistry.
+
+I like to create visualisation and learning day by day how to better tell stories with data. If you are here you can look at the section Portfolio to see some example of what I do.

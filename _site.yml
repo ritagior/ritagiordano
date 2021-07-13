@@ -1,18 +1,21 @@
 name: "ritagiordano"
-title: "Portfolio"
+title: "Rita Giordano Portfolio"
 description: |
   Portfolio
 output_dir: "docs"
 navbar:
   right:
-    - text: "Home"
-      href: index.html
-    - text: "About"
-      href: about.html
+    # - text: "Home"
+    #   href: index.html
+    # - text: "About"
+    #   href: about.html
     - text: "Portfolio"
       menu:
         - text: "World fertility rate"
           href:  World_fertility.html
-        - text: "Fertility: Floruish chart"
-          href: flourish.html
+        - text: "Topic modeling"
+          href: Topic_modeling.html
+        - text: "Solar consumption"
+          href: Solar_consuption.html
+  search: true
 output: distill::distill_article

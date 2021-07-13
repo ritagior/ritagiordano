@@ -1,0 +1,22 @@
+---
+title: "Topic modeling"
+description: |
+  Connecting article with enviromental topic.
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+How to connect article published in one issue with the topic of the Journal?
+
+![Chord diagram](img/chord_diagram_topic_final.png)
+
+From this analysis I realized the cover for the March issue, using the data visualization with handmade watercolor background.
+
+![Cover ESPI March 2020 Issue](img/cover.png)
+
+
+
+
