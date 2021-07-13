@@ -11,8 +11,9 @@ knitr::opts_chunk$set(echo = FALSE)
 htmltools::includeHTML("test.html")
 ```
 
-The fertility in the 2010s has a step decreasing if comparing with the 1960s.
-Unsurprisingly high income countries show a lower fertility rate than low income countries. Countries were women have more possibility to have an higher education show that they conceive less child compared to low income.
+Here I was to have look at the fertility in the 2010s compared with the 1960s. The bar chart shows a decreasing for each level of income of fertility rates in the 2010s. 
+High income countries present a lower fertility rate than low income countries. 
+It seems that were women have access to hight education let decrease the fertility rate.
 
 ```{r, message = FALSE, echo = FALSE, warning = FALSE, fig.width= 10, fig.height=6}
 library(readxl)
@@ -31,7 +32,7 @@ income <- data_2 %>% pivot_longer(!IncomeGroup,
                                   values_to = "count") %>%
   mutate(Years = as.numeric(Years))
 
-## define year range to make the comparision
+## define year range to make the comparison
 range <- seq(1960,1969)
 
 baselines<- bind_cols(income %>%
@@ -101,10 +102,13 @@ ggplot() +
   theme(plot.title = element_text(size = 20, face = "bold")) +
   labs(caption = "Source: The Data World Bank")
 
-
-htmltools::includeHTML("flourish2.html")
 ```
 
+With Flourish I realised an interactive visualisation that show the world fertility rate by income. Changing the filter is possible to see the differences between the countries for 2019. 
+
+```{r}
+htmltools::includeHTML("flourish2.html")
+```
 
 
 
