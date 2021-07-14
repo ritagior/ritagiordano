@@ -7,8 +7,8 @@ output: distill::distill_article
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-I was really curios to see if country as Italy (where I come from) have more consuption of solar energy. So I start to check which countries in Europe has the highest consumption of solar thermal heat for houseold. Solar energy can be a powerfull source of electricity and heating for houseld as alternative source of energy. From the data I saw that only countries on southern and western europe use more solar energy. The country that consume the most is Germany and in southern europe there are Greece and Spain among the most consumer of solar energy.
-Surprisingly countries such us Greece, Spain and Italy that could have more day of sunlight than wester countries use less solar energy. Italy and France show similar consunption of solar energy. 
+I was really curious to see whether countries such as Italy (where I come from) has higher consumption of solar energy. So I started to check which countries in Europe hve the highest consumption of solar thermal heat for household. Solar energy can be a powerful and clean source of electricity and heating for households. From the data I analysed only countries on Southern and Western Europe produce high amounts of solar energy. The leading country in consumption of solar energy is Germany while, in Southern Europe, Greece and Spain are the ones that consume the most.
+Surprisingly, countries such as Greece, Spain and Italy, which have more days of sunlight than Western countries, use less solar energy. Italy and France, for instance, have a similar consumption. 
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.width= 12, fig.height=8}
 library(tidyverse)
