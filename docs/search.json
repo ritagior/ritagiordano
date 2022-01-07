@@ -1,0 +1,73 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About this site",
+      "description": "Some additional details about the website",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2022-01-07T14:51:03+00:00"
+    },
+    {
+      "path": "Bio.html",
+      "title": "Rita Giordano",
+      "author": [],
+      "contents": "\n\n          \n          \n          \n          \n          Rita Giordano\n          \n          \n          Home\n          Bio\n          gallery\n          \n          \n          Portfolio\n           \n          ▾\n          \n          \n          World fertility rate\n          Topic modeling\n          Solar consumption\n          \n          \n          Illustration\n          ☰\n          \n          \n      \n        \n          \n            \n              \n            \n              Rita Giordano\n            \n            \n              \n                \n                    \n                      \n                        LinkedIn\n                      \n                    \n                  \n                                    \n                    \n                      \n                        Twitter\n                      \n                    \n                  \n                                    \n                    \n                      \n                        GitHub\n                      \n                    \n                  \n                                    \n                    \n                      \n                        Email\n                      \n                    \n                  \n                                  \n            \n          \n        \n        \n        \n          \n            I am a physicist turned into a data scientist and I am currently based in UK. Life brought me travelling all across Europe. From the highest volcano in Europe, where I graduated in Physics, I landed to the French Alps to do a PhD at the European Synchrotron Radiation Facility (ESRF) in statistics and physics applied to structural biology. After my PhD, from Alps to Alps, I did my first postdoc at the Swiss Light Source (SLS). Later on I moved to the capital of Europe to discover beautiful vineyards and to start to work as biostatistician. Never tired to travel and discover new places, I decided to come back to academic research and I started a second post-doc in one of the oldest university in Europe, Cambridge. After this great experience I continued my European tour and after a parental leave I began my data scientist adventure in Karlsruhe. Afterwards I came back to Strasbourg to start a new life as data scientist freelance. Lastly I moved again to Cambridge where I worked a as a data scientist for the Royal Society of Chemistry and now I seek a new challenge in data visualisation.\n            I like to create visualisations and learning new stuff day by day. Please feel free to visit the section “Portfolio” to see some examples of what I do and I love to do.\n          \n        \n      \n    \n\n    \n      \n        \n          \n            \n              \n            \n              Rita Giordano\n            \n            \n              \n                \n                                    \n                    \n                      LinkedIn\n                    \n                  \n                                    \n                    \n                      Twitter\n                    \n                  \n                                    \n                    \n                      GitHub\n                    \n                  \n                                    \n                    \n                      Email\n                    \n                  \n                                  \n              \n            \n            \n              I am a physicist turned into a data scientist and I am currently based in UK. Life brought me travelling all across Europe. From the highest volcano in Europe, where I graduated in Physics, I landed to the French Alps to do a PhD at the European Synchrotron Radiation Facility (ESRF) in statistics and physics applied to structural biology. After my PhD, from Alps to Alps, I did my first postdoc at the Swiss Light Source (SLS). Later on I moved to the capital of Europe to discover beautiful vineyards and to start to work as biostatistician. Never tired to travel and discover new places, I decided to come back to academic research and I started a second post-doc in one of the oldest university in Europe, Cambridge. After this great experience I continued my European tour and after a parental leave I began my data scientist adventure in Karlsruhe. Afterwards I came back to Strasbourg to start a new life as data scientist freelance. Lastly I moved again to Cambridge where I worked a as a data scientist for the Royal Society of Chemistry and now I seek a new challenge in data visualisation.\n              I like to create visualisations and learning new stuff day by day. Please feel free to visit the section “Portfolio” to see some examples of what I do and I love to do.\n            \n        \n      \n    \n\n    \n    \n    \n      Rita Giordano, rgiordano@gmx.com\n      \n      \n\n  \n  ",
+      "last_modified": "2022-01-07T14:51:03+00:00"
+    },
+    {
+      "path": "blog.html",
+      "title": "Blog",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2022-01-07T14:51:04+00:00"
+    },
+    {
+      "path": "flourish.html",
+      "title": "Untitled",
+      "description": "A new article created using the Distill format.\n",
+      "author": [],
+      "contents": "\n\n\n\n\n\n\n\nTitleFertility rate\n\n\n\n\n\n\n\n\n\n\n\n\n",
+      "last_modified": "2022-01-07T14:51:04+00:00"
+    },
+    {
+      "path": "gallery.html",
+      "title": "Gallery",
+      "author": [],
+      "contents": "\n\n\n\n\n.column {\n  float: left;\n  width: 45%;\n  margin-left: 1rem;\n}\n/* Clear floats after the columns */\n.row:after {\n  content: \"\";\n  display: table;\n  clear: both;\n}\n#lightgallery > a > img:hover {\n   transform: scale(1.15, 1.15);\n   transition: 0.4s ease-in-out;\n   cursor: pointer;\n}\n\n/* For some reason, icons are not loaded so I choose them myself */\n.lg-actions .lg-next {\n  content:\"\\1433\"\n}\n.lg-actions .lg-prev {\n  content:\"\\1438\"\n}\n.lg-toolbar .lg-download {\n content:\"\\2913\"\n}\n.lg-toolbar .lg-close {\n content:\"\\00D7\"\n}\n.lg-toolbar .lg-icon {\n    background-color: #000;\n    border-color: #000;\n    border-style: solid;\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n    lightGallery(document.getElementById('lightgallery'), {\n      hideBarsDelay: 1500\n    }); \n\n\n\n",
+      "last_modified": "2022-01-07T14:51:05+00:00"
+    },
+    {
+      "path": "index.html",
+      "title": "Rita Giordano",
+      "description": "Data visualisation and scientific illustration\n",
+      "author": [],
+      "contents": "\nI’m Rita a data passionate who like to tell story and create data visualisation. Know more about me in Bio and my portfolio\n\n\n\nCover ESPI March 2020 Issue\n\n\n",
+      "last_modified": "2022-01-07T14:51:06+00:00"
+    },
+    {
+      "path": "Solar_consuption.html",
+      "title": "Solar thermal heat consumption by household",
+      "author": [],
+      "contents": "\nI was really curious to see whether countries such as Italy (where I come from) has higher consumption of solar energy. So I started to check which countries in Europe hve the highest consumption of solar thermal heat for household. Solar energy can be a powerful and clean source of electricity and heating for households. From the data I analysed only countries on Southern and Western Europe produce high amounts of solar energy. The leading country in consumption of solar energy is Germany while, in Southern Europe, Greece and Spain are the ones that consume the most. Surprisingly, countries such as Greece, Spain and Italy, which have more days of sunlight than Western countries, use less solar energy. Italy and France, for instance, have a similar consumption.\n\n\n\n\n\n\n",
+      "last_modified": "2022-01-07T14:51:08+00:00"
+    },
+    {
+      "path": "Topic_modeling.html",
+      "title": "Topic modeling",
+      "description": "Connecting article with enviromental topic.\n",
+      "author": [],
+      "contents": "\nI prepared these visualisations for the editorial article of the journal “Environmental Science: Process and Impact” (2020) March Issue. The idea behind this project was to find which was the topic for the article submitted in that issue. I thus performed a topic analysis using the title and abstract of the submitter’s papers. To represent the topic of each article I used a chord diagram, which I realised with the R package circlize.\nChord diagramBased on this analysis I have also realised the front cover for the journal issue (March 2020). I have designed the cover illustration by including the chord diagram obtained for the editorial article and using, as background, an handmade watercolour of the sea on the shore (made by me). What an honour to have my work on the cover!\nCover ESPI March 2020 Issue\n\n\n",
+      "last_modified": "2022-01-07T14:51:09+00:00"
+    },
+    {
+      "path": "World_fertility.html",
+      "title": "World fertility rate",
+      "description": "How the fertility rate changed in the last 60 years.\n",
+      "author": [],
+      "contents": "\nI was interested to compare the fertility rate in the 2010s with the 1960s. The bar chart shows a decrease for each level of income of fertility rates in the 2010s. High income countries present a lower fertility rate than low income countries. It seems that the fertility rate decreases in places where women have access to higher education.\n\n\n\nWith Flourish I realised an interactive visualisation that shows the fertility rate by income worldwide. By changing the filter it is possible to spot the differences between the countries for the year 2019.\n\n\n\n\n\n\n\nTitleFertility rate\n\n\n\n\n\n\n\n\n\n",
+      "last_modified": "2022-01-07T14:51:10+00:00"
+    }
+  ],
+  "collections": ["posts/posts.json"]
+}

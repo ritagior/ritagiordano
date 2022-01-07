@@ -86,29 +86,26 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>Rita Giordano</title>
+  <title>Rita Giordano: Gallery</title>
 
-  <meta property="description" itemprop="description" content="Data visualisation and scientific illustration"/>
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Rita Giordano"/>
+  <meta property="og:title" content="Rita Giordano: Gallery"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="Data visualisation and scientific illustration"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Rita Giordano"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Rita Giordano"/>
-  <meta property="twitter:description" content="Data visualisation and scientific illustration"/>
+  <meta property="twitter:title" content="Rita Giordano: Gallery"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","site"]}},"value":[{"type":"character","attributes":{},"value":["Rita Giordano"]},{"type":"character","attributes":{},"value":["Data visualisation and scientific illustration\n"]},{"type":"character","attributes":{},"value":["distill::distill_website"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","output"]}},"value":[{"type":"character","attributes":{},"value":["Gallery"]},{"type":"character","attributes":{},"value":["distill::distill_article"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2053,7 +2050,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Rita Giordano","description":"Data visualisation and scientific illustration","authors":[]}
+{"title":"Gallery","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2093,21 +2090,80 @@ Portfolio
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Rita Giordano</h1>
+<h1>Gallery</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>Data visualisation and scientific illustration</p></p>
+
 </div>
 
 
 <div class="d-article">
-<p>I’m Rita a data passionate who like to tell story and create data visualisation. Know more about me in Bio and my portfolio</p>
-<div class="layout-chunk" data-layout="l-body-outset">
+<head>
+<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.0/css/lightgallery.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.1-beta.0/js/lightgallery.min.js"></script>
+<!-- lightgallery plugins -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lg-fullscreen/1.2.1/lg-fullscreen.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lg-thumbnail/1.2.1/lg-thumbnail.min.js"></script>
+</head>
+<div class="layout-chunk" data-layout="l-body">
+<style type="text/css">
 
+.column {
+  float: left;
+  width: 45%;
+  margin-left: 1rem;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#lightgallery > a > img:hover {
+   transform: scale(1.15, 1.15);
+   transition: 0.4s ease-in-out;
+   cursor: pointer;
+}
+
+/* For some reason, icons are not loaded so I choose them myself */
+.lg-actions .lg-next {
+  content:"\1433"
+}
+.lg-actions .lg-prev {
+  content:"\1438"
+}
+.lg-toolbar .lg-download {
+ content:"\2913"
+}
+.lg-toolbar .lg-close {
+ content:"\00D7"
+}
+.lg-toolbar .lg-icon {
+    background-color: #000;
+    border-color: #000;
+    border-style: solid;
+}
+
+</style>
 </div>
-<figure>
-<img src="img/cover.png" alt="Cover ESPI March 2020 Issue" /><figcaption aria-hidden="true">Cover ESPI March 2020 Issue</figcaption>
-</figure>
+<div class="layout-chunk" data-layout="l-body">
+<div class="row" id="lightgallery">
+<a href="_gallery/img/sankey2.png">
+<img src="_gallery/img/thumb-sankey2.png"/>
+</a>
+<a href="_gallery/img/sankey2.png">
+<img src="_gallery/img/thumb-thumb-sankey2.png"/>
+</a>
+<a href="_gallery/img/sankey2.png">
+<img src="_gallery/img/thumb-thumb-thumb-sankey2.png"/>
+</a>
+</div>
+</div>
+<script type="text/javascript">
+    lightGallery(document.getElementById('lightgallery'), {
+      hideBarsDelay: 1500
+    }); 
+</script>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

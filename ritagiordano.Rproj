@@ -17,3 +17,5 @@ StripTrailingWhitespace: Yes
 
 BuildType: Website
 WebsitePath: ~/Documents/R_Projects/ritagiordano
+
+SpellingDictionary: en_GB

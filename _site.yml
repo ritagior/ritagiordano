@@ -1,14 +1,21 @@
-name: "ritagiordano"
-title: "Rita Giordano Portfolio"
+name: "."
+title: "Rita Giordano"
 description: |
-  Portfolio
+  Rita Giordano
 output_dir: "docs"
 navbar:
+  logo:
+    image: img/logo.png
+    href: https://ritagior.github.io/ritagiordano/
   right:
-    # - text: "Home"
-    #   href: index.html
+    - text: "Home"
+      href: index.html
     # - text: "About"
     #   href: about.html
+    - text: "Bio"
+      href: "Bio.html"
+    - text: "gallery"
+      href: "gallery.html"
     - text: "Portfolio"
       menu:
         - text: "World fertility rate"
@@ -17,5 +24,8 @@ navbar:
           href: Topic_modeling.html
         - text: "Solar consumption"
           href: Solar_consuption.html
+    - text: "Illustration"
   search: true
-output: distill::distill_article
+output:
+  distill::distill_article:
+    toc: true
