@@ -4,9 +4,9 @@ description: |
   Rita Giordano
 output_dir: "docs"
 navbar:
-  logo:
-    image: img/logo.png
-    href: https://ritagior.github.io/ritagiordano/
+  # logo:
+  #   image: img/logo.png
+  #   href: https://ritagior.github.io/ritagiordano/
   right:
     - text: "Home"
       href: index.html
