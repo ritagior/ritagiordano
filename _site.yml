@@ -14,8 +14,8 @@ navbar:
     #   href: about.html
     - text: "Bio"
       href: "Bio.html"
-    - text: "gallery"
-      href: "gallery.html"
+    # - text: "gallery"
+    #   href: "gallery.html"
     - text: "Portfolio"
       menu:
         - text: "World fertility rate"
