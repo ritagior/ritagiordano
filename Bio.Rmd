@@ -6,13 +6,13 @@ color2: "#C66060"
 angle: 130
 links:
   - label: LinkedIn
-    url: "https://linkedin.com/"
+    url: "https://www.linkedin.com/in/ritagiordano/"
   - label: Twitter
-    url: "https://twitter.com/"
+    url: "https://twitter.com/rgiordano79"
   - label: GitHub
-    url: "https://github.com/"
+    url: "https://github.com/ritagior"
   - label: Email
-    url: "mailto:email@email.com"
+    url: "mailto:rgiordano@gmx.com"
 output:
   postcards::trestles
 ---
