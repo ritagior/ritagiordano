@@ -1,7 +1,7 @@
 ---
 title: "Rita Giordano"
 description: |
-  Data visualisation and scientific illustration
+  Data visualisation specialist and scientific illustration
 site: distill::distill_website
 ---
 
@@ -15,7 +15,7 @@ knitr::opts_chunk$set(echo = FALSE)
 # https://rstudio.github.io/distill/publish_website.html#github-pages
 
 ```
-I'm Rita a data passionate who like to tell story and create data visualisation.
+I'm a data passionate who like to tell story and create data visualisation.
 Know more about me in Bio and my portfolio
 
 ```{r layout="l-body-outset"}
