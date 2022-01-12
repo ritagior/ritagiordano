@@ -55,14 +55,91 @@ slickR(
  #          variableWidth = TRUE) 
 ```
 
+<!-- Gallery -->
+
+<!-- </h2> -->
+
+<!-- ::: {.sm:grid .sm:grid-cols-2 .xl:grid-cols-5 .sm:gap-16} -->
+
+<!-- <div> -->
+
+<!-- <a href="Topic_modeling.html"> -->
+<!-- <img src="img/work/sankey2_.svg" alt="Cover for ESPI"/> -->
+<!-- </a> -->
+
+<!-- </div> -->
+
+<!-- <div> -->
+
+<!-- <a href="Topic_modeling.html"> -->
+<!-- <img src="img/work/sankey2_.svg" alt="Cover for ESPI"/> -->
+<!-- </a> -->
+
+<!-- </div> -->
+
+<!-- <div> -->
+
+<!-- <a href="Topic_modeling.html"> -->
+<!-- <img src="img/work/sankey2_.svg" alt="Cover for ESPI"/> -->
+<!-- </a> -->
+
+<!-- </div> -->
+
+<!-- <div> -->
+
+<!-- <a href="Topic_modeling.html"> -->
+<!-- <img src="img/work/sankey2_.svg" alt="Cover for ESPI"/> -->
+<!-- </a> -->
+
+<!-- </div> -->
+
+<!-- <div> -->
+
+<!-- <a href="Topic_modeling.html"> -->
+<!-- <img src="img/work/sankey2_.svg" alt="Cover for ESPI"/> -->
+<!-- </a> -->
+
+<!-- </div> -->
+
+<!-- <div> -->
+
+<!-- <a href="Topic_modeling.html"> -->
+<!-- <img src="img/work/sankey2_.svg" alt="Cover for ESPI"/> -->
+<!-- </a> -->
+
+<!-- </div> -->
+<!-- ::: -->
+
+<!-- <div> -->
+
+<!-- <a href="Topic_modeling.html"> -->
+<!-- <img src="img/published/chord_diagram_topic_final.svg" alt="Chord diagram for editorial"/> -->
+<!-- </a> -->
+
+<!-- </div> -->
+
+<!-- <div> -->
+
+<!-- <a href="Solar_consuption.html"> -->
+<!-- <img src="img/personal/solar.svg" alt="Solar analysis"/> -->
+<!-- </a> -->
+
+<!-- </div> -->
 
 
+<!-- <div> -->
+
+<!-- <a href="World_fertility.html"> -->
+<!-- <img src="img/personal/fertility.svg" alt="Fertility analysis"/> -->
+<!-- </a> -->
+
+<!-- </div> -->
 <!-- <head> -->
 
 <!-- <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.0/css/lightgallery.min.css" /> -->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.1-beta.0/js/lightgallery.min.js"></script> -->
 
-<!-- <!-- lightgallery plugins --> 
+<!-- <!-- lightgallery plugins -->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lg-fullscreen/1.2.1/lg-fullscreen.min.js"></script> -->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lg-thumbnail/1.2.1/lg-thumbnail.min.js"></script> -->
 
