@@ -22,4 +22,4 @@ Know more about me in Bio and my portfolio
 # knitr::include_graphics("img/cover.png")
 ```
 
-![Cover ESPI March 2020 Issue](img/cover.png)
+![Cover ESPI March 2020 Issue](img/cover.jpg)

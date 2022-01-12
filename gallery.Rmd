@@ -10,15 +10,9 @@ library(slickR)
 
 # Work projects
 
-<!-- ```{r} -->
-<!-- #paths <- list.files("img/", full = TRUE) -->
-<!-- pixture("_gallery/img/sankey2.jpg") -->
-
-<!-- ``` -->
-
 ```{r}
 slickR::slickR(
-    list.files("img/work/",full.names = TRUE, pattern = 'png'),
+    list.files("img/work/",full.names = TRUE, pattern = 'jpg'),
     height = 400,
     width = '95%') +
   slickR::settings(autoplay = TRUE)
@@ -29,7 +23,7 @@ slickR::slickR(
 ```{r}
 
 slickR(
-    list.files("img/published/",full.names = TRUE, pattern = 'png'),
+    list.files("img/published/",full.names = TRUE, pattern = 'jpg'),
     height = 400,
     width = '95%') +
   slickR::settings(autoplay = TRUE)
@@ -44,7 +38,7 @@ slickR(
 # Personal projects
 ```{r}
 slickR(
-    list.files("img/personal/",full.names = TRUE, pattern = 'png'),
+    list.files("img/personal/",full.names = TRUE, pattern = 'jpg'),
     height = 400,
     width = '95%') +
   slickR::settings(autoplay = TRUE)
@@ -54,161 +48,4 @@ slickR(
  #          centerMode = TRUE,
  #          variableWidth = TRUE) 
 ```
-
-<!-- Gallery -->
-
-<!-- </h2> -->
-
-<!-- ::: {.sm:grid .sm:grid-cols-2 .xl:grid-cols-5 .sm:gap-16} -->
-
-<!-- <div> -->
-
-<!-- <a href="Topic_modeling.html"> -->
-<!-- <img src="img/work/sankey2_.svg" alt="Cover for ESPI"/> -->
-<!-- </a> -->
-
-<!-- </div> -->
-
-<!-- <div> -->
-
-<!-- <a href="Topic_modeling.html"> -->
-<!-- <img src="img/work/sankey2_.svg" alt="Cover for ESPI"/> -->
-<!-- </a> -->
-
-<!-- </div> -->
-
-<!-- <div> -->
-
-<!-- <a href="Topic_modeling.html"> -->
-<!-- <img src="img/work/sankey2_.svg" alt="Cover for ESPI"/> -->
-<!-- </a> -->
-
-<!-- </div> -->
-
-<!-- <div> -->
-
-<!-- <a href="Topic_modeling.html"> -->
-<!-- <img src="img/work/sankey2_.svg" alt="Cover for ESPI"/> -->
-<!-- </a> -->
-
-<!-- </div> -->
-
-<!-- <div> -->
-
-<!-- <a href="Topic_modeling.html"> -->
-<!-- <img src="img/work/sankey2_.svg" alt="Cover for ESPI"/> -->
-<!-- </a> -->
-
-<!-- </div> -->
-
-<!-- <div> -->
-
-<!-- <a href="Topic_modeling.html"> -->
-<!-- <img src="img/work/sankey2_.svg" alt="Cover for ESPI"/> -->
-<!-- </a> -->
-
-<!-- </div> -->
-<!-- ::: -->
-
-<!-- <div> -->
-
-<!-- <a href="Topic_modeling.html"> -->
-<!-- <img src="img/published/chord_diagram_topic_final.svg" alt="Chord diagram for editorial"/> -->
-<!-- </a> -->
-
-<!-- </div> -->
-
-<!-- <div> -->
-
-<!-- <a href="Solar_consuption.html"> -->
-<!-- <img src="img/personal/solar.svg" alt="Solar analysis"/> -->
-<!-- </a> -->
-
-<!-- </div> -->
-
-
-<!-- <div> -->
-
-<!-- <a href="World_fertility.html"> -->
-<!-- <img src="img/personal/fertility.svg" alt="Fertility analysis"/> -->
-<!-- </a> -->
-
-<!-- </div> -->
-<!-- <head> -->
-
-<!-- <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.0/css/lightgallery.min.css" /> -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.1-beta.0/js/lightgallery.min.js"></script> -->
-
-<!-- <!-- lightgallery plugins -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lg-fullscreen/1.2.1/lg-fullscreen.min.js"></script> -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lg-thumbnail/1.2.1/lg-thumbnail.min.js"></script> -->
-
-<!-- </head> -->
-
-<!-- ```{css} -->
-
-<!-- .column { -->
-<!--   float: left; -->
-<!--   width: 45%; -->
-<!--   margin-left: 1rem; -->
-<!-- } -->
-<!-- /* Clear floats after the columns */ -->
-<!-- .row:after { -->
-<!--   content: ""; -->
-<!--   display: table; -->
-<!--   clear: both; -->
-<!-- } -->
-<!-- #lightgallery > a > img:hover { -->
-<!--    transform: scale(1.15, 1.15); -->
-<!--    transition: 0.4s ease-in-out; -->
-<!--    cursor: pointer; -->
-<!-- } -->
-
-<!-- /* For some reason, icons are not loaded so I choose them myself */ -->
-<!-- .lg-actions .lg-next { -->
-<!--   content:"\1433" -->
-<!-- } -->
-<!-- .lg-actions .lg-prev { -->
-<!--   content:"\1438" -->
-<!-- } -->
-<!-- .lg-toolbar .lg-download { -->
-<!--  content:"\2913" -->
-<!-- } -->
-<!-- .lg-toolbar .lg-close { -->
-<!--  content:"\00D7" -->
-<!-- } -->
-<!-- .lg-toolbar .lg-icon { -->
-<!-- 	background-color: #000; -->
-<!-- 	border-color: #000; -->
-<!-- 	border-style: solid; -->
-<!-- } -->
-
-<!-- ``` -->
-
-<!-- ```{r include = FALSE} -->
-<!-- # Load the functions we have created -->
-<!-- source(here::here("resize.R")) -->
-<!-- ``` -->
-
-<!-- ```{r} -->
-<!-- # Create layout -->
-<!-- withTags( -->
-<!--   div( -->
-<!--     class = "row", -->
-<!--     id = "lightgallery", -->
-<!--     tagList( -->
-<!--       make_gallery() -->
-<!--     ) -->
-<!--   ) -->
-<!-- ) -->
-
-<!-- ``` -->
-
-<!-- <script type="text/javascript"> -->
-<!--     lightGallery(document.getElementById('lightgallery'), { -->
-<!--       hideBarsDelay: 1500 -->
-<!--     });  -->
-<!-- </script> -->
-
-
 
