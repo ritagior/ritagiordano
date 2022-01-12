@@ -5,13 +5,13 @@ color1: "#5A59A3"
 color2: "#C66060"
 angle: 130
 links:
-  - label: LinkedIn
+  - label: '`r fontawesome::fa("linkedin", height = "25px")`'
     url: "https://www.linkedin.com/in/ritagiordano/"
-  - label: Twitter
+  - label: '`r fontawesome::fa("twitter", height = "25px")`'
     url: "https://twitter.com/rgiordano79"
-  - label: GitHub
+  - label: '`r fontawesome::fa("github", height = "25px")`'
     url: "https://github.com/ritagior"
-  - label: Email
+  - label: '`r fontawesome::fa("envelope", height = "25px")`'
     url: "mailto:rgiordano@gmx.com"
 output:
   postcards::trestles
