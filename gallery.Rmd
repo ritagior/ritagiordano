@@ -14,8 +14,10 @@ library(slickR)
 slickR::slickR(
     list.files("img/work/",full.names = TRUE, pattern = 'jpg'),
     height = 400,
-    width = '95%') +
-  slickR::settings(autoplay = TRUE)
+    width = '95%') %synch%
+  (slickR(c("How word in enviromental science are connetted",
+            "Where my cv is going"), slideType = 'p') + 
+     settings(arrows = FALSE, autoplay = TRUE))
 ```
 
 # Published
@@ -25,13 +27,10 @@ slickR::slickR(
 slickR(
     list.files("img/published/",full.names = TRUE, pattern = 'jpg'),
     height = 400,
-    width = '95%') +
-  slickR::settings(autoplay = TRUE)
- # settings(infinite= TRUE,
- #          speed = 300,
- #          slidesPerRow = 2,
- #          centerMode = TRUE,
- #          variableWidth = TRUE) 
+    width = '95%') %synch%
+  (slickR(c("How articles are connected each other with different subjects",
+            "Data art of chord diagram with watercolour"), slideType = 'p') + 
+     settings(arrows = FALSE, autoplay = TRUE))
 ```
 
 
@@ -39,13 +38,14 @@ slickR(
 ```{r}
 slickR(
     list.files("img/personal/",full.names = TRUE, pattern = 'jpg'),
+    objLinks = c("https://ritagior.github.io/ritagiordano/World_fertility.html",
+                 NA,
+                 "https://ritagior.github.io/ritagiordano/Solar_consuption.html"),
     height = 400,
-    width = '95%') +
-  slickR::settings(autoplay = TRUE)
- # settings(infinite= TRUE,
- #          speed = 300,
- #          slidesPerRow = 2,
- #          centerMode = TRUE,
- #          variableWidth = TRUE) 
+    width = '95%') %synch%
+  (slickR(c("World fertility rate",
+            "Will the leads generate a booking?",
+            "Household solar consumption in Europe"), slideType = 'p') + 
+     settings(arrows = FALSE, autoplay = TRUE))
 ```
 
