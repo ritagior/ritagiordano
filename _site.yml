@@ -24,6 +24,8 @@ navbar:
           href: Topic_modeling.html
         - text: "Solar consumption"
           href: Solar_consuption.html
+        - text: "Words of enviromental science"
+          href: Network.html
     - text: "Illustration"
   search: true
 output:

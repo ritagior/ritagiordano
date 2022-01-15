@@ -8,43 +8,49 @@ knitr::opts_chunk$set(echo = FALSE)
 library(slickR)
 ```
 
-# Work projects
+
+## Work projects
+
 
 ```{r}
 slickR::slickR(
-    list.files("img/work/",full.names = TRUE, pattern = 'jpg'),
+    list.files("img/work/", full.names = TRUE, pattern = 'jpg'),
+    objLinks = c(NA, "Network.html", NA),
     height = 400,
-    width = '95%') %synch%
-  (slickR(c("How word in enviromental science are connetted",
-            "Where my cv is going"), slideType = 'p') + 
-     settings(arrows = FALSE, autoplay = TRUE))
+    width = '95%') +
+  # (slickR(c(,
+  #           "Where my cv is going"), slideType = 'p') + 
+     settings(autoplay = TRUE)
 ```
 
-# Published
+
+## Published
 
 ```{r}
 
 slickR(
     list.files("img/published/",full.names = TRUE, pattern = 'jpg'),
+    objLinks = c("Topic_modeling.html", "Topic_modeling.html"),
     height = 400,
-    width = '95%') %synch%
-  (slickR(c("How articles are connected each other with different subjects",
-            "Data art of chord diagram with watercolour"), slideType = 'p') + 
-     settings(arrows = FALSE, autoplay = TRUE))
+    width = '95%') +
+#%synch%
+  # (slickR(c("How articles are connected each other with different subjects",
+  #           "Data art of chord diagram with watercolour"), slideType = 'p') + 
+     settings(arrows = FALSE, autoplay = TRUE)
 ```
 
 
-# Personal projects
+## Personal projects
+
+
 ```{r}
 slickR(
     list.files("img/personal/",full.names = TRUE, pattern = 'jpg'),
-    objLinks = c("https://ritagior.github.io/ritagiordano/World_fertility.html",
-                 NA,
-                 "https://ritagior.github.io/ritagiordano/Solar_consuption.html"),
+    objLinks = c("World_fertility.html",
+                 "Solar_consuption.html"),
     height = 400,
     width = '95%') %synch%
   (slickR(c("World fertility rate",
-            "Will the leads generate a booking?",
             "Household solar consumption in Europe"), slideType = 'p') + 
      settings(arrows = FALSE, autoplay = TRUE))
 ```

@@ -66,6 +66,8 @@ solar_household_Europe %>%
   ggtitle("Direct use of solar thermal heat - Consumption by household from 2000 and 2019") +
   theme(plot.title = element_text(size = 20, face = "bold")) +
   labs(caption = "Source: UNdata")
+
+#ggsave("img/personal/solar.png", dpi = 100)
   
 ```
 

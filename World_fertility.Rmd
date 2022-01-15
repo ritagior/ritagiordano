@@ -101,7 +101,7 @@ ggplot() +
   ggtitle("World fertility: comparision between 1960s and 2010s ") +
   theme(plot.title = element_text(size = 20, face = "bold")) +
   labs(caption = "Source: The Data World Bank")
-
+#ggsave("img/personal/fertility.png", dpi = 100)
 ```
 
 With Flourish I realised an interactive visualisation that shows the fertility rate by income worldwide. By changing the filter it is possible to spot the differences between the countries for the year 2019. 
