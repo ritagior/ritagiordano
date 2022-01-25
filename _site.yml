@@ -26,6 +26,8 @@ navbar:
           href: Solar_consuption.html
         - text: "Words of enviromental science"
           href: Network.html
+        - text: "DSV survey 2021"
+          href: Freelance.html
     - text: "Illustration"
   search: true
 output:

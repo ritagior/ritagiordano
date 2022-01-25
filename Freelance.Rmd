@@ -1,0 +1,38 @@
+---
+title: "Data Visualization Society Survey"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+The Data Visualization Society (DVS) performed in 2021 a survey focused on the state of the industry, the Annual Data Visualization State of the Industry (SOTI).
+The DSV survey received 2165 answers and 464 identified themselves as Freelance, Consultant or Independent contractor. 
+However, who identified their role as a freelance in most cases has also another job. 
+For example out of this 464 freelance, 160 covered also positions in an organisation with some data visualization job responsibilities.
+Only 228 out of 464 participants of the survey described their role only as Freelance, Consultant or Contractor.
+
+## Freelance freedom to choose their tool.
+
+The word freelance historically indicates a medieval mercenary, originally as two words `free lance`.
+The DSV survey asked the freelances if the are free to choose their tool. Journalists and cartographers are completely free to choose their tool. The 82% of Designers and only the 68% of Analysts are free to choose their tool. Overall, the majority of the participants are free to choose their tool. 
+
+```{r layout="l-body-outset"}
+knitr::include_graphics("img/tool.png")
+```
+
+## Freelance audience.
+
+Another question was `As a freelancer, who do you make data visualizations for? Select all that apply.` The majority of the freelancer identify as designer and their audience can be from general public to analyst, from scientist to researcher. Designer is the biggest proportion if freelance and they also reach almost all the audience indicate in the survey.
+
+```{r layout="l-body-outset"}
+knitr::include_graphics("img/chord_survey.png")
+```
+
+```{r layout="l-body-outset"}
+#knitr::include_graphics("img/survey.png")
+```
+<!-- ![Data Visualization Society Survey](img/survey.png) -->
+
+
