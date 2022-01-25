@@ -24,7 +24,7 @@ knitr::include_graphics("img/tool.png")
 
 ## Freelance audience.
 
-Another question was `As a freelancer, who do you make data visualizations for? Select all that apply.` The majority of the freelancer identify as designer and their audience can be from general public to analyst, from scientist to researcher. Designers are the biggest proportion of freelancers and they also reach almost all the audience indicate in the survey.
+Another question was: "As a freelancer, who do you make data visualizations for? Select all that apply." The majority of the freelancers identified as Designer, 30%, and their audience can be from general public to analysts, from scientists to researchers. Designers, are the biggest proportion of freelancers and they also reach out almost all the audience indicate in the survey. Analysts, 20%, and Developers, 16%, are the other roles that reach out the majority of the audience specified in the survey.
 
 ```{r layout="l-body-outset"}
 knitr::include_graphics("img/chord_survey.png")
