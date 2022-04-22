@@ -1,7 +1,7 @@
 ---
 title: "Rita Giordano"
 description: |
-  Data visualisation specialist and scientific illustration
+  Data visualisation and scientific illustration
 site: distill::distill_website
 ---
 
