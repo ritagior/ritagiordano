@@ -19,7 +19,7 @@ The word freelance historically indicates a medieval mercenary, originally as tw
 The DSV survey asked the freelances if the are free to choose their tool. Journalists and cartographers are completely free to choose their tool. The 82% of Designers and only the 68% of Analysts are free to choose their tool. Overall, the majority of the participants are free to choose their tool. 
 
 ```{r layout="l-body-outset"}
-knitr::include_graphics("img/tool.png")
+knitr::include_graphics("img/dvs_survey_tool.png")
 ```
 
 ## Freelance audience.
