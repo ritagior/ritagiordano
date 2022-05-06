@@ -12,22 +12,22 @@ navbar:
       href: index.html
     # - text: "About"
     #   href: about.html
-    - text: "Bio"
+    - text: "About"
       href: "Bio.html"
-    - text: "gallery"
+    - text: "Data Visualisation"
       href: "gallery.html"
-    - text: "Portfolio"
-      menu:
-        - text: "World fertility rate"
-          href:  World_fertility.html
-        - text: "Topic modeling"
-          href: Topic_modeling.html
-        - text: "Solar consumption"
-          href: Solar_consuption.html
-        - text: "Words of enviromental science"
-          href: Network.html
-        - text: "DSV survey 2021"
-          href: Freelance.html
+    # - text: "Portfolio"
+    #   menu:
+    #     - text: "World fertility rate"
+    #       href:  World_fertility.html
+    #     - text: "Topic modeling"
+    #       href: Topic_modeling.html
+    #     - text: "Solar consumption"
+    #       href: Solar_consuption.html
+    #     - text: "Words of enviromental science"
+    #       href: Network.html
+    #     - text: "DSV survey 2021"
+    #       href: Freelance.html
     - text: "Illustration"
   search: true
 output:

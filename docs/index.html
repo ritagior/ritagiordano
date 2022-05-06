@@ -108,7 +108,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","site"]}},"value":[{"type":"character","attributes":{},"value":["Rita Giordano"]},{"type":"character","attributes":{},"value":["Data visualisation and scientific illustration\n"]},{"type":"character","attributes":{},"value":["distill::distill_website"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","site","css"]}},"value":[{"type":"character","attributes":{},"value":["Rita Giordano"]},{"type":"character","attributes":{},"value":["Data visualisation and scientific illustration\n"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["css/strapless.css"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2045,6 +2045,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_site_in_header-->
   <!--/radix_placeholder_site_in_header-->
 
+  <link rel="stylesheet" href="css/strapless.css" type="text/css"/>
 
 </head>
 
@@ -2066,22 +2067,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 <div class="nav-right">
 <a href="index.html">Home</a>
-<a href="Bio.html">Bio</a>
-<a href="gallery.html">gallery</a>
-<div class="nav-dropdown">
-<button class="nav-dropbtn">
-Portfolio
- 
-<span class="down-arrow">&#x25BE;</span>
-</button>
-<div class="nav-dropdown-content">
-<a href="World_fertility.html">World fertility rate</a>
-<a href="Topic_modeling.html">Topic modeling</a>
-<a href="Solar_consuption.html">Solar consumption</a>
-<a href="Network.html">Words of enviromental science</a>
-<a href="Freelance.html">DSV survey 2021</a>
-</div>
-</div>
+<a href="Bio.html">About</a>
+<a href="gallery.html">Data Visualisation</a>
 <span class="nav-dropdown-header">Illustration</span>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
 </div>
@@ -2100,13 +2087,54 @@ Portfolio
 
 
 <div class="d-article">
-<p>I’m a data passionate who like to tell story and create data visualisation. Know more about me in Bio and my portfolio</p>
+<!-- Remove margin under images -->
+<style>
+d-article div.sourceCode pre {
+  background: #dae7f1;
+}
+
+code {
+  background-color: #dae7f1;
+}
+
+d-article pre  {
+  background-color: #dae7f1;
+}
+</style>
+<p>I’m Rita a data visualisation consultant and scientific illustrator. I have more than thirteen years of experience in data analysis and visualisation. If you have data to visualise contact me and I will find the best way to visualise them. If you have data to analyse and visualise we can discuss about which analysis would be the and how I will do the visualisation. If you need R packages for your work I have experience in developing internal packages for companies and I have also developed two packages public available on CRAN (inserte website) Know more about me in Bio and my portfolio</p>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<div class="layout-chunk" data-layout="l-body-outset">
+<div>
+<div class="row p-0 row-cols-2" style="margin-left: -1rem; margin-right: -1rem; margin-top: 1rem; margin-bottom: 1rem; ">
+<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah " style="padding: 1rem ; border-width: 0; border-radius: .6rem .6rem .6rem .6rem ;">
+<div class="card-body justify-content-end m-0 p-0" style="visibility: visible; background-color: #FFFFFFAA; border-style:solid; border-color:inherits; border-width:0; border-radius: .6rem .6rem 0 0 ;">
+<a href="https://ritagior.github.io/ritagiordano/gallery.html">
+<h5 class="card-title my-auto px-3 pt-3 pb-3">Data visualisation</h5>
+</a>
+</div>
+<a href="https://ritagior.github.io/ritagiordano/gallery.html" style="color: inherit;">
+<img src="img/chord_survey.png" class="card-img-bottom" style="border-style:solid; border-color:inherits; border-width:0 0 0 0; border-radius: 0 0 .6rem .6rem ;"/>
+</a>
+</div>
+<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah " style="padding: 1rem ; border-width: 0; border-radius: .6rem .6rem .6rem .6rem ;">
+<div class="card-body justify-content-end m-0 p-0" style="visibility: visible; background-color: #FFFFFFAA; border-style:solid; border-color:inherits; border-width:0; border-radius: .6rem .6rem 0 0 ;">
+<a href="https://ritagior.github.io/ritagiordano/gallery.html">
+<h5 class="card-title my-auto px-3 pt-3 pb-3">Scientific Illustration</h5>
+</a>
+</div>
+<a href="https://ritagior.github.io/ritagiordano/gallery.html" style="color: inherit;">
+<img src="img/cover_web.jpg" class="card-img-bottom" style="border-style:solid; border-color:inherits; border-width:0 0 0 0; border-radius: 0 0 .6rem .6rem ;"/>
+</a>
+</div>
+</div>
+</div>
+</div>
 <div class="layout-chunk" data-layout="l-body-outset">
 
 </div>
-<figure>
-<img src="img/cover.jpg" alt="Cover ESPI March 2020 Issue" /><figcaption aria-hidden="true">Cover ESPI March 2020 Issue</figcaption>
-</figure>
+<!-- ![Cover ESPI March 2020 Issue](img/cover.jpg) -->
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

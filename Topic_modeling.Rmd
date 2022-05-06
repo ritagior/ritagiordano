@@ -3,6 +3,7 @@ title: "Topic modeling"
 description: |
   Connecting article with enviromental topic.
 output: distill::distill_article
+preview: img/chord_diagram_topic_final.png
 ---
 
 ```{r setup, include=FALSE}
