@@ -4,6 +4,8 @@ description: |
   Data visualisation and scientific illustration
 site: distill::distill_website
 css: "css/strapless.css"
+header-includes:
+    - \renewcommand{\contentsname}{}
 ---
 <!-- Remove margin under images -->
 <style>
@@ -31,14 +33,26 @@ library(tidyverse)
 # https://rstudio.github.io/distill/publish_website.html#github-pages
 
 ```
-I am a physicist turned data visualisation designer and scientific illustrator. I am currently based in UK. Life brought me travelling all across Europe. From the highest volcano in Europe, where I graduated in Physics, to the French Alps for a PhD at the European Synchrotron Radiation Facility (ESRF) in statistics and physics applied to structural biology. After my PhD, from Alps to Alps, I did my first postdoc at the Swiss Light Source (SLS). Later on, I moved to the capital of Europe to work as biostatistician. Never tired to travel and discover new places, I decided to come back to academic research.  In 2014 I started a second post-doc in one of the oldest university in Europe, Cambridge. After this great experience, I continued my European tour. After a parental leave I began my data scientist adventure in Karlsruhe. Afterwards I came back to Strasbourg to start a new life as data scientist freelance. I moved again to Cambridge, working as data scientist and data visualisation designer. Now I seek a new challenge in data visualisation and scientific illustration.
+I'm Rita a data visualisation consultant and scientific illustrator. I have more than thirteen years of experience in data analysis and visualisation. 
+
+## What I can do for you
+Do you have data to visualise? I will find the best way to visualise them. 
+
+Do you have data to analyse and visualise? Let's discuss about which analysis would be the best and how I will visualise your data.
+
+Do you need and R packages for your company? I have several here of experience in creating R packages for internal project. I have also developed two packages available on CRAN 
+
+Do you need a graphical abstract or a scientific illustration? I'm here to listen to you and create the illustration that best fit your needs.
+
+I code in R and d3.js and I can create static and interactive visualisations.
+
 ```{r}
 # Read in projects csv file 
 first <- read_csv("data/first_page.csv")
 ```
 
 ```{r projects, echo=FALSE, layout="l-body-outset"}
-first %>% 
+first[1:2,] %>% 
   bs4cards::cards(
     title = title,
     #text = description,
@@ -57,6 +71,10 @@ first %>%
   )
 ```
 
+## What I cannot do for you
+I don't work on project that involves only data science without data visualisation. 
+
+I don't do dashboard.
 
 ```{r layout="l-body-outset"}
 # knitr::include_graphics("img/cover.png")

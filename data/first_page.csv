@@ -1,3 +1,11 @@
-title,src,url,description
-Data visualisation,img/chord_survey.png,https://ritagior.github.io/ritagiordano/gallery.html,Data visualisation
-Scientific Illustration,img/cover_web.jpg,https://ritagior.github.io/ritagiordano/gallery.html,Scientific Illustration
+title,src,url,description, tag
+Data visualisation,img/chord_survey.png,https://ritagior.github.io/ritagiordano/gallery.html,Data visualisation,
+Scientific Illustration,img/cover_web.jpg,https://ritagior.github.io/ritagiordano/Illustration.html,Scientific Illustration,
+data are anonymised, img/work/leads.jpg,  , Datavis, R; ggplot2; Adobe Illustrator
+data are anonymised, img/sankey.png, , Datavis, R; d3; networkD3; htmltools
+Network, img/network.jpg, , Datavis, R; visnetwork; networkD3
+Chord, img/published/chord_diagram_topic_final.jpg, ,Datavis, R; circlize
+Cover,img/cover.jpg, , Sciart, Journal cover; Photoshop; R; watercolour
+Begonia wax semperflorens, img/begonia_wax.jpg, , Sciart, botanical illustration; pen and ink
+Mushroom, img/Mushroom.jpg, , Sciart, natural history illustration; graphite
+Eagle, img/Eagle.jpg, , Sciart, natural history illustration; graphite

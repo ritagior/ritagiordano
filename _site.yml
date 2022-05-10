@@ -16,20 +16,21 @@ navbar:
       href: "Bio.html"
     - text: "Data Visualisation"
       href: "gallery.html"
-    # - text: "Portfolio"
-    #   menu:
-    #     - text: "World fertility rate"
-    #       href:  World_fertility.html
-    #     - text: "Topic modeling"
-    #       href: Topic_modeling.html
-    #     - text: "Solar consumption"
-    #       href: Solar_consuption.html
-    #     - text: "Words of enviromental science"
-    #       href: Network.html
-    #     - text: "DSV survey 2021"
-    #       href: Freelance.html
+    - text: "Posts"
+      menu:
+        - text: "World fertility rate"
+          href:  World_fertility.html
+        - text: "Topic modeling"
+          href: Topic_modeling.html
+        - text: "Solar consumption"
+          href: Solar_consuption.html
+        - text: "Words of enviromental science"
+          href: Network.html
+        - text: "DSV survey 2021"
+          href: Freelance.html
     - text: "Illustration"
+      href: Illustration.html
   search: true
 output:
   distill::distill_article:
-    toc: true
+    toc: false

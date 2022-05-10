@@ -1,0 +1,45 @@
+---
+title: "Scientific Illustrations"
+description: |
+  Journal cover, botanical and natural illustration.
+
+output: distill::distill_article
+css: "css/strapless.css"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+```
+
+```{r}
+# Read in projects csv file 
+first <- read_csv("data/first_page.csv")
+```
+
+```{r projects, echo=FALSE, layout="l-body-outset"}
+first %>%
+  filter(description == "Sciart") %>%
+  bs4cards::cards(
+    #title = title,
+    #text = description,
+    link = url,
+    image = src,
+    #layout = "label-above",
+    spacing = 5,
+    tags = paste("all;", tag),
+    #width = 1,
+    width = "row-cols-2",
+    border_width = 0,
+    layout = "image-only",
+    #label_colour = c("#ffffffaa", "#ffffffaa"),
+    breakpoint = 5,
+    #border_colour = "#ffffffaa"
+    
+  )
+```
+
+
+
+
+
