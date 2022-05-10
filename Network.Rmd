@@ -2,6 +2,8 @@
 title: "Words of Enviromental Science"
 description: |
   Netwok of keywords and their subjects.
+      |
+  Client: Royal Society of Chemistry
 output: distill::distill_article
 ---
 
@@ -9,7 +11,7 @@ output: distill::distill_article
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-This network show how keywords from enviromental science are related to different topics. 
+This network show how keywords from environmental science are related to different topics. 
 
 ```{r}
 htmltools::includeHTML("NetworkSubCat.html")
