@@ -73,7 +73,8 @@ fertility <- income %>%
   distinct(IncomeGroup, values)
 
 ggplot() +
-  geom_bar(aes(x = reorder(baseline, -value), y = value, fill = "#D7191C"), data = baselines_df,
+  geom_bar(aes(x = reorder(baseline, -value), y = value, fill = "#D7191C"),
+           data = baselines_df,
            width = 0.55, stat = "identity", show.legend = FALSE) +
   geom_bar(aes(x = IncomeGroup, y = values, fill = "#512B58"),
            data = fertility ,
@@ -99,7 +100,7 @@ ggplot() +
         legend.position="bottom", legend.direction="horizontal") +
   xlab("Income") + ylab("Fertility rate") + coord_flip() +
   ggtitle("World fertility: comparision between 1960s and 2010s ") +
-  theme(plot.title = element_text(size = 20, face = "bold")) +
+  theme(plot.title = element_text(size = 30, face = "bold")) +
   labs(caption = "Source: The Data World Bank")
 #ggsave("img/personal/fertility.png", dpi = 100)
 ```
