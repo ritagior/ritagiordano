@@ -51,24 +51,24 @@ I code in R and d3.js and I can create static and interactive visualisations.
 first <- read_csv("data/first_page.csv")
 ```
 
-```{r projects, echo=FALSE, eval = TRUE, message = FALSE, layout="l-body-outset"}
-first[1:2,] %>% 
-  bs4cards::cards(
-    title = title,
-    #text = description,
-    link = url,
-    image = src,
-    layout = "label-above",
-    spacing = 5,
-    #width = 1,
-    width = "row-cols-2",
-    border_width = 0,
-    #layout = "inset-bottom",
-    label_colour = c("#ffffffaa", "#ffffffaa"),
-    breakpoint = 5,
-    #border_colour = "#ffffffaa"
-    
-  )
+```{r projects, echo=FALSE, layout="l-body-outset"}
+# first[1:2,] %>% 
+#   bs4cards::cards(
+#     title = title,
+#     #text = description,
+#     link = url,
+#     image = src,
+#     layout = "label-above",
+#     spacing = 5,
+#     #width = 1,
+#     width = "row-cols-2",
+#     border_width = 0,
+#     #layout = "inset-bottom",
+#     label_colour = c("#ffffffaa", "#ffffffaa"),
+#     breakpoint = 5,
+#     #border_colour = "#ffffffaa"
+#     
+#   )
 ```
 
 ## What I cannot do for you
