@@ -33,6 +33,6 @@ knitr::include_graphics("img/chord_survey.png")
 ```{r layout="l-body-outset"}
 #knitr::include_graphics("img/survey.png")
 ```
-<!-- ![Data Visualization Society Survey](img/survey.png) -->
+
 
 
