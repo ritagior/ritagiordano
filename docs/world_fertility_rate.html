@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { color: #20794d; } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,11 +74,11 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #20794d; } /* SpecialChar */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
 code span.va { color: #111111; } /* Variable */
@@ -85,27 +86,31 @@ code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
-  <!--radix_placeholder_meta_tags-->
-  <title>Rita Giordano: Data Visualization Society Survey</title>
 
+  <!--radix_placeholder_meta_tags-->
+  <title>Rita Giordano: World fertility rate</title>
+
+  <meta property="description" itemprop="description" content="How the fertility rate changed in the last 60 years."/>
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Rita Giordano: Data Visualization Society Survey"/>
+  <meta property="og:title" content="Rita Giordano: World fertility rate"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content="How the fertility rate changed in the last 60 years."/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Rita Giordano"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Rita Giordano: Data Visualization Society Survey"/>
+  <meta property="twitter:title" content="Rita Giordano: World fertility rate"/>
+  <meta property="twitter:description" content="How the fertility rate changed in the last 60 years."/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","output"]}},"value":[{"type":"character","attributes":{},"value":["Data Visualization Society Survey"]},{"type":"character","attributes":{},"value":["distill::distill_article"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output"]}},"value":[{"type":"character","attributes":{},"value":["World fertility rate"]},{"type":"character","attributes":{},"value":["How the fertility rate changed in the last 60 years.\n"]},{"type":"character","attributes":{},"value":["distill::distill_article"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -452,7 +457,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   </style>
 
-  <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
   <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -1024,10 +1029,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     position: relative;
     margin-bottom: 2.5em;
     margin-top: 1.5em;
-  }
-
-  .figure img {
-    width: 100%;
   }
 
   .figure .caption {
@@ -1859,7 +1860,16 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
+          var fn = $(this).children()[0]
+          $(this).html(fn.shadowRoot.querySelector("sup"))
+          $(this).id = fn.id
+          fn.remove()
+        }
+        var refs = $(this).attr('data-cites').split(" ");
+        var refHtml = refs.map(function(ref) {
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
+        }).join("\n");
         window.tippy(this, {
           allowHTML: true,
           content: refHtml,
@@ -1870,6 +1880,31 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           placement: 'bottom-start'
         });
       });
+
+      // fix footnotes in tables (#411)
+      // replacing broken distill.pub feature
+      $('table d-footnote').each(function() {
+        // we replace internal showAtNode methode which is triggered when hovering a footnote
+        this.hoverBox.showAtNode = function(node) {
+          // ported from https://github.com/distillpub/template/pull/105/files
+          calcOffset = function(elem) {
+              let x = elem.offsetLeft;
+              let y = elem.offsetTop;
+              // Traverse upwards until an `absolute` element is found or `elem`
+              // becomes null.
+              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                  x += elem.offsetLeft;
+                  y += elem.offsetTop;
+              }
+
+              return { left: x, top: y };
+          }
+          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+          const bbox = node.getBoundingClientRect();
+          const offset = calcOffset(node);
+          this.show([offset.left + bbox.width, offset.top + bbox.height]);
+        }
+      })
 
       // clear polling timer
       clearInterval(tid);
@@ -1969,6 +2004,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // mark non-body figures created by knitr chunks as 100% width
     $('.layout-chunk').each(function(i, val) {
       var figures = $(this).find('img, .html-widget');
+      // ignore leaflet img layers (#106)
+      figures = figures.filter(':not(img[class*="leaflet"])')
       if ($(this).attr('data-layout') !== "l-body") {
         figures.css('width', '100%');
       } else {
@@ -1991,7 +2028,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // get rid of index.html references in header
     if (window.location.protocol !== "file:") {
       $('.distill-site-header a[href]').each(function(i,val) {
-        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
       });
     }
 
@@ -2030,7 +2067,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2050,7 +2087,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Data Visualization Society Survey","authors":[]}
+{"title":"World fertility rate","description":"How the fertility rate changed in the last 60 years.","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2063,8 +2100,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 <div class="nav-right">
 <a href="index.html">Home</a>
-<a href="Bio.html">About</a>
-<a href="gallery.html">Data Visualisation</a>
+<a href="about.html">About</a>
+<a href="data_visualisation.html">Data Visualisation</a>
 <div class="nav-dropdown">
 <button class="nav-dropbtn">
 Posts
@@ -2072,14 +2109,14 @@ Posts
 <span class="down-arrow">&#x25BE;</span>
 </button>
 <div class="nav-dropdown-content">
-<a href="World_fertility.html">World fertility rate</a>
-<a href="Topic_modeling.html">Topic modeling</a>
-<a href="Solar_consuption.html">Solar consumption</a>
-<a href="Network.html">Words of enviromental science</a>
-<a href="Freelance.html">DSV survey 2021</a>
+<a href="world_fertility_rate.html">World fertility rate</a>
+<a href="topic_modeling_RSC.html">Topic modeling</a>
+<a href="solar_consumption.html">Solar consumption</a>
+<a href="network.html">Words of enviromental science</a>
+<a href="dvs_survey.html">DSV survey 2021</a>
 </div>
 </div>
-<a href="Illustration.html">Illustration</a>
+<a href="scientific_illustration.html">Scientific Illustration</a>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
 </div>
 </nav>
@@ -2089,30 +2126,48 @@ Posts
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Data Visualization Society Survey</h1>
+<h1>World fertility rate</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-
+<p><p>How the fertility rate changed in the last 60 years.</p></p>
 </div>
 
 
 <div class="d-article">
-<p>The Data Visualization Society (DVS) performed in 2021 a survey focused on the state of the industry, the Annual Data Visualization State of the Industry (SOTI). The DSV survey received 2165 answers and 464 identified themselves as Freelance, Consultant or Independent contractor. However, who identified their role as a freelance in most cases has also another job. For example out of this 464 freelance, 160 covered also positions in an organisation with some data visualization job responsibilities. Only 228 out of 464 participants of the survey described their role only as Freelance, Consultant or Contractor.</p>
-<h2 id="freelance-freedom-to-choose-their-tool.">Freelance freedom to choose their tool.</h2>
-<p>The word freelance historically indicates a medieval mercenary, originally as two words <code>free lance</code>. The DSV survey asked the freelances if the are free to choose their tool. Journalists and cartographers are completely free to choose their tool. The 82% of Designers and only the 68% of Analysts are free to choose their tool. Overall, the majority of the participants are free to choose their tool.</p>
-<div class="layout-chunk" data-layout="l-body-outset">
-<p><img src="img/dvs_survey_tool.png" width="568" /></p>
+<p>I was interested to compare the fertility rate in the 2010s with the
+1960s. The bar chart shows a decrease for each level of income of
+fertility rates in the 2010s. High income countries present a lower
+fertility rate than low income countries. It seems that the fertility
+rate decreases in places where women have access to higher
+education.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="world_fertility_rate_files/figure-html5/unnamed-chunk-1-1.png" width="960" /></p>
 </div>
-<h2 id="freelance-audience.">Freelance audience.</h2>
-<p>Another question was: “As a freelancer, who do you make data visualizations for? Select all that apply.” The majority of the freelancers identified as Designer, 30%, and their audience can be from general public to analysts, from scientists to researchers. Designers, are the biggest proportion of freelancers and they also reach out almost all the audience indicate in the survey. Analysts, 20%, and Developers, 16%, are the other roles that reach out the majority of the audience specified in the survey.</p>
-<div class="layout-chunk" data-layout="l-body-outset">
-<p><img src="img/chord_survey.png" width="852" /></p>
-</div>
-<div class="layout-chunk" data-layout="l-body-outset">
+<p>With Flourish I realised an interactive visualisation that shows the
+fertility rate by income worldwide. By changing the filter it is
+possible to spot the differences between the countries for the year
+2019.</p>
+<div class="layout-chunk" data-layout="l-body">
+<!DOCTYPE html>
+<html>
 
+<head>
+
+
+<title>Title</title>
+</head>
+
+<body>
+
+<p>Fertility rate</p>
+
+
+<div class="flourish-embed flourish-hierarchy" data-src="visualisation/6481298"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+</body>
+</html>
 </div>
-<!-- ![Data Visualization Society Survey](img/survey.png) -->
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
