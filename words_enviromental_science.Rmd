@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = FALSE)
 This network show how keywords from environmental science are related to different topics. 
 
 ```{r}
-htmltools::includeHTML("NetworkSubCat.html")
+htmltools::includeHTML("network_sub_cat.html")
 ```
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Scientific Illustrations"
+title: "Scientific Illustration"
 description: |
   Journal cover, botanical and natural illustration.
 

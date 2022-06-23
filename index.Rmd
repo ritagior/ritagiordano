@@ -76,7 +76,3 @@ I don't work on project that involves only data science without data visualisati
 
 I don't do dashboard.
 
-```{r layout="l-body-outset"}
-# knitr::include_graphics("img/cover.png")
-```
-
