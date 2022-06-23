@@ -1,0 +1,32 @@
+name: "."
+title: "Rita Giordano"
+#theme: theme.css
+description: |
+  Rita Giordano
+output_dir: "docs"
+navbar:
+  right:
+    - text: "Home"
+      href:  index.html
+    - text: "About"
+      href:  about.html
+    - text: "Data Visualisation"
+      href:  data_visualisation.html
+    - text: "Posts"
+      menu:
+        - text: "World fertility rate"
+          href:  world_fertility_rate.html
+        - text: "Topic modeling"
+          href:  topic_modeling_rsc.html
+        - text: "Solar consumption"
+          href:  solar_consumption.html
+        - text: "Words of enviromental science"
+          href:  words_enviromental_science.html
+        - text: "DSV survey 2021"
+          href:  dvs_survey.html
+    - text: "Scientific Illustration"
+      href:  scientific_illustration.html
+  search: true
+output:
+  distill::distill_article:
+    toc: false
