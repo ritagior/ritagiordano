@@ -1,11 +1,11 @@
 title,src,url,description, tag
-Data visualisation,img/chord_survey.png,https://ritagior.github.io/ritagiordano/data_visualisation.html,Data visualisation,
-Scientific Illustration,img/cover_web.jpg, https://ritagior.github.io/ritagiordano/scientific_illustration.html,Scientific Illustration,
-Network, img/network.jpg, https://ritagior.github.io/ritagiordano/network.html, Datavis, R; visnetwork; networkD3
-Chord, img/published/chord_diagram_topic_final.jpg, https://ritagior.github.io/ritagiordano/topic_modeling.html,Datavis, R; circlize
-fertility, img/personal/fertility.jpg, https://ritagior.github.io/ritagiordano/world_fertility.html, Datavis, R; ggplot2
-flourish, img/personal/fertility_flou.png, https://ritagior.github.io/ritagiordano/world_fertility.html, Datavis, Flourish
-solar, img/personal/solar.jpg, https://ritagior.github.io/ritagiordano/solar_consuption.html, Datavis, R; ggplot2
+Data visualisation,img/chord_survey.png,https://ritagiordano.co.uk/data_visualisation.html,Data visualisation,
+Scientific Illustration,img/cover_web.jpg, https://ritagiordano.co.uk/scientific_illustration.html,Scientific Illustration,
+Network, img/network.jpg, https://ritagiordano.co.uk/words_enviromental_science.html, Datavis, R; visnetwork; networkD3
+Chord, img/published/chord_diagram_topic_final.jpg, https://ritagiordano.co.uk/ritagiordano/topic_modeling_RSC.html,Datavis, R; circlize
+fertility, img/personal/fertility.jpg, https://ritagiordano.co.uk/world_fertility_rate.html, Datavis, R; ggplot2
+flourish, img/personal/fertility_flou.png, https://ritagiordano.co.uk/world_fertility_rate.html, Datavis, Flourish
+solar, img/personal/solar.jpg, https://ritagiordano.co.uk/solar_consumption.html, Datavis, R; ggplot2
 Sankey, img/sankey_web.jpg, img/sankey_web.jpg, Datavis, R; d3; networkD3; htmltools
 Leads, img/personal/leads_web.png,  img/personal/leads_web.png, Datavis, R; ggplot2; Adobe Illustrator
 Cover,img/cover.jpg, , Sciart, Journal cover; Photoshop; R; watercolou
