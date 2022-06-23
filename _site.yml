@@ -1,6 +1,6 @@
 name: "."
 title: "Rita Giordano"
-# theme: theme.css
+#theme: theme.css
 description: |
   Rita Giordano
 output_dir: "docs"
@@ -22,17 +22,17 @@ navbar:
     - text: "Posts"
       menu:
         - text: "World fertility rate"
-          href:  world_fertility.html
+          href:  world_fertility_rate.html
         - text: "Topic modeling"
-          href: topic_modeling.html
+          href:  topic_modeling_RSC.html
         - text: "Solar consumption"
-          href: solar_consuption.html
+          href:  solar_consumption.html
         - text: "Words of enviromental science"
-          href: network.html
+          href:  words_enviromental_science.html
         - text: "DSV survey 2021"
-          href: freelance.html
+          href:  dvs_survey.html
     - text: "Scientific Illustration"
-      href: scientific_illustration.html
+      href:  scientific_illustration.html
   search: true
 output:
   distill::distill_article:
