@@ -8,19 +8,19 @@ header-includes:
     - \renewcommand{\contentsname}{}
 ---
 <!-- Remove margin under images -->
-<style>
-d-article div.sourceCode pre {
-  background: #dae7f1;
-}
+<!-- <style> -->
+<!-- d-article div.sourceCode pre { -->
+<!--   background: #dae7f1; -->
+<!-- } -->
 
-code {
-  background-color: #dae7f1;
-}
+<!-- code { -->
+<!--   background-color: #dae7f1; -->
+<!-- } -->
 
-d-article pre  {
-  background-color: #dae7f1;
-}
-</style>
+<!-- d-article pre  { -->
+<!--   background-color: #dae7f1; -->
+<!-- } -->
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
@@ -80,4 +80,3 @@ I don't do dashboard.
 # knitr::include_graphics("img/cover.png")
 ```
 
-<!-- ![Cover ESPI March 2020 Issue](img/cover.jpg) -->
