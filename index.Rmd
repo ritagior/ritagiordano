@@ -51,7 +51,7 @@ I code in R and d3.js and I can create static and interactive visualisations.
 first <- read_csv("data/first_page.csv")
 ```
 
-```{r projects, echo=FALSE, layout="l-body-outset"}
+```{r projects, echo=FALSE, eval = TRUE, message = FALSE, layout="l-body-outset"}
 first[1:2,] %>% 
   bs4cards::cards(
     title = title,
