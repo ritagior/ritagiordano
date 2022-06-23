@@ -1,10 +1,120 @@
 ---
-title: "About this site"
-description: |
-  Some additional details about the website
+title: "Rita Giordano"
+image: "img/photo.jpg"
+color1: "#5A59A3"
+color2: "#C66060"
+angle: 130
+links:
+  - label: '`r fontawesome::fa("linkedin", height = "25px")`'
+    url: "https://www.linkedin.com/in/ritagiordano/"
+  - label: '`r fontawesome::fa("twitter", height = "25px")`'
+    url: "https://twitter.com/rgiordano79"
+  - label: '`r fontawesome::fa("github", height = "25px")`'
+    url: "https://github.com/ritagior"
+  - label: '`r fontawesome::fa("envelope", height = "25px")`'
+    url: "mailto:rgiordano@gmx.com"
+output:
+  postcards::trestles
+  #postcards::jolla
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
+Hi! I'm Rita, a UK-based data visualisation designer and scientific illustrator. I have several years of experienced in data analysis and data visualisation. I have a a scientific background with a master in Physics and a PhD in Crystallography. I worked fo several years in academia and I have a deep understanding of scientific research. During these years I continuously tried to improve my illustration skill with course at "Ecole des beaux-arts de Grenoble" and courses at UAL in London and in natural history illustration with the University of Newcastle.
 
+Now I seek a new challenge in data visualisation and scientific illustration.
+
+```{r, echo=FALSE, eval=FALSE, echo=FALSE, message=FALSE, warning=FALSE, fig.width= 12, fig.height=8}
+library(tidyverse)
+library(streamgraph)
+library(lubridate)
+library(RColorBrewer)
+data <- read_csv("data/parcours-Table 1.csv", 
+                 col_names = TRUE)
+data <- data[,1:6] %>%
+  separate(Years, sep = "-", into = c("Years_s", "Years_e"))  %>%
+  mutate(Years_s = my(Years_s),
+         Years_e = my(Years_e),
+         Year = year(Years_s),
+         months = interval(Years_s, Years_e) %/% months(1))
+pp <- streamgraph(data, key = "Fonctions", 
+                  value = "months",
+                  date = "Year",
+                  height="300px", 
+                  width="1000px",
+                  offset="wiggle") %>%
+  sg_axis_x(20, "Year", "%Y") %>%
+  sg_annotate(label = "France", 
+              x = as.Date("2009", format = "%Y"),
+              y = 20) %>%
+  sg_annotate(label = "Switzerland", 
+              x = as.Date("2011", format = "%Y"),
+              y = 35) %>%
+  sg_annotate(label = "France", 
+              x = as.Date("2012", format = "%Y"),
+              y = 30) %>%
+  sg_annotate(label = "UK", 
+              x = as.Date("2013", format = "%Y"),
+              y = 47) %>%
+  sg_legend(show=TRUE, label="names: ")
+
+library(ggstream)
+cb_palette <- brewer.pal(4, "RdBu")
+colour <- c("#CA0020", "#F4A582", "#CA0020", "#0571B0", "#CA0020","#92C5DE", "#CA0020", "#CA0020", "#CA0020", "#0571B0","#0571B0","#0571B0","#0571B0","#0571B0")
+theme_set(theme_minimal(base_family = "Helvetica", base_size = 12))
+
+theme_update(
+  plot.title = element_text(
+    size = 25,
+    face = "bold",
+    hjust = .5,
+    margin = margin(10, 0, 30, 0)
+  ),
+  plot.caption = element_text(
+    size = 9,
+    color = "grey40",
+    hjust = .5,
+    margin = margin(20, 0, 5, 0)
+  ),
+  axis.text.y = element_blank(),
+  axis.title = element_blank(),
+  plot.background = element_rect(fill = "grey88", color = NA),
+  panel.background = element_rect(fill = NA, color = NA),
+  panel.grid = element_blank(),
+  panel.spacing.y = unit(0, "lines"),
+  strip.text.y = element_blank(),
+  legend.position = "bottom",
+  legend.text = element_text(size = 9, color = "grey40"),
+  legend.box.margin = margin(t = 30), 
+  legend.background = element_rect(
+    color = "grey40", 
+    size = .3, 
+    fill = "grey95"
+  ),
+  legend.key.height = unit(.25, "lines"),
+  legend.key.width = unit(2.5, "lines"),
+  plot.margin = margin(rep(20, 4))
+)
+
+ggs <- data %>%
+  ggplot(aes(Year, months, fill = Fonctions)) +
+  geom_stream(extra_span = 0.3) +
+  geom_stream(extra_span = 0.3, true_range = "none",
+              alpha = 1) +
+  # geom_stream(
+  #   #geom = "contour",
+  #   #color = "white",
+  #   #size = 1.25,
+  #   extra_span = 0.3,
+  #   #bw = .45 # Controls smoothness
+  # ) +
+  # geom_stream(
+  #   #geom = "polygon",
+  #   extra_span = 0.3,
+  #   #bw = .45,
+  #   #size = 0
+  # ) +
+  geom_stream_label(aes(label = Fonctions)) 
+  # scale_fill_manual(values = colour,
+  #                   label = c("France", "Switzwerland","France", "United Kingdom", "France", "Germany", "France", "France", "France", "United Kingdom", "United Kingdom", "United Kingdom", "United Kingdom", "United Kingdom")) 
+pp
+
+```
