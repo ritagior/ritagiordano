@@ -7,8 +7,6 @@ output: distill::distill_article
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
-
-# htmltools::includeHTML("test.html")
 ```
 
 I was interested to compare the fertility rate in the 2010s with the 1960s. The bar chart shows a decrease for each level of income of fertility rates in the 2010s. 
