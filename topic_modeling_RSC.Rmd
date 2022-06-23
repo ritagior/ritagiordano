@@ -12,7 +12,7 @@ preview: img/chord_diagram_topic_final.png
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-I prepared these visualisations for the editorial article of the journal "Environmental Science: Process and Impact" (2020) March Issue. The idea behind this project was to find which was the topic for the article submitted in that issue. I thus performed a topic analysis using the title and abstract of the submitter's papers. To represent the topic of each article I used a chord diagram, which I realised with the R package `circlize`.
+I prepared these visualisations for the editorial article of the journal "Environmental Science: Process and Impact" (2020) March Issue of the Royal Society of Chemistry. The idea behind this project was to find which was the topic for the article submitted in that issue. I thus performed a topic analysis using the title and abstract of the submitters' papers. To represent the topic of each article I used a chord diagram, which I realised with the R package `circlize`.
 
 ![Chord diagram](img/chord_diagram_topic_final.png)
 
