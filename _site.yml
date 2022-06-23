@@ -31,8 +31,8 @@ navbar:
           href: network.html
         - text: "DSV survey 2021"
           href: freelance.html
-    - text: "Illustration"
-      href: scientifi_illustration.html
+    - text: "Scientific Illustration"
+      href: scientific_illustration.html
   search: true
 output:
   distill::distill_article:
