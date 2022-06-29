@@ -3,6 +3,13 @@ title: "Data visualisation"
 output: distill::distill_article
 css: "css/strapless.css"
 ---
+<style type="text/css">
+.main-container {
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
@@ -10,20 +17,20 @@ library(tidyverse)
 ```
 
 ### Work
-```{r}
+```{r, layout="l-page"}
 first <- read_csv("data/first_page.csv")
 first %>% 
   filter(description == "Datavis") %>%
   bs4cards::cards(
     #title = title,
-    text = description,
+    #text = description,
     link = url,
     image = src,
     #layout = "label-above",
     spacing = 5,
     tags = paste("all;", tag),
-    #width = 5,
-    width = "row-cols-2",
+    width = 3,
+    #width = "row-cols-2",
     border_width = 0,
     layout = "image-only",
     #label_colour = c("#ffffffaa", "#ffffffaa"),
