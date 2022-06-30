@@ -34,5 +34,13 @@ knitr::include_graphics("img/chord_survey.png")
 #knitr::include_graphics("img/survey.png")
 ```
 
+## Update visualisation  
+The beautiful of the DVS is that they gave me feed back of my visualisation.
+This was really incredible! Below the new version after the comments of the jury. Thanks DVS!!!
+
+```{r layout="l-body-outset"}
+knitr::include_graphics("img/info_survey.jpg")
+```
+
 
 
