@@ -22,18 +22,14 @@ first <- read_csv("data/first_page.csv")
 first %>% 
   filter(description == "Datavis") %>%
   bs4cards::cards(
-    #title = title,
-    #text = description,
     link = url,
     image = src,
-    #layout = "label-above",
     spacing = 5,
     tags = paste("all;", tag),
     width = 3,
     #width = "row-cols-2",
     border_width = 0,
     layout = "image-only",
-    #label_colour = c("#ffffffaa", "#ffffffaa"),
     breakpoint = 5,
     #border_colour = "#ffffffaa"
     
