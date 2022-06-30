@@ -18,9 +18,9 @@ output:
   #postcards::jolla
 ---
 
-Hi! I'm Rita, a UK-based data visualisation designer and scientific illustrator. I have several years of experienced in data analysis and data visualisation. I have a a scientific background with a master in Physics and a PhD in Crystallography. I worked fo several years in academia and I have a deep understanding of scientific research. During these years I continuously tried to improve my illustration skill with course at "Ecole des beaux-arts de Grenoble" and courses at UAL in London and in natural history illustration with the University of Newcastle.
+Hi! I'm Rita, a UK-based data visualisation designer and scientific illustrator. I have several years of experienced in data analysis and data visualisation. I have a a scientific background with a master in Physics and a PhD in Crystallography. I worked fo several years in academia and I have a deep understanding of scientific research. During these years, as scientist and data scientist, I continuously tried to improve my illustration skills. I did some courses at "Ecole des beaux-arts de Grenoble" and courses at UAL in London. Lastly, I need to imporve my skills in scientific illustrayion and I took a course in natural history illustration with the University of Newcastle.
 
-Now I seek a new challenge in data visualisation and scientific illustration.
+Do you have projects? Let's talk.
 
 ```{r, echo=FALSE, eval=FALSE, echo=FALSE, message=FALSE, warning=FALSE, fig.width= 12, fig.height=8}
 library(tidyverse)
