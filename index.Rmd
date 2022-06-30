@@ -7,15 +7,6 @@ css: "css/strapless.css"
 header-includes:
     - \renewcommand{\contentsname}{}
 ---
-<!-- Remove margin under images -->
-<!-- <style> -->
-<!-- d-article div.sourceCode pre { -->
-<!--   background: #dae7f1; -->
-<!-- } -->
-
-<!-- code { -->
-<!--   background-color: #dae7f1; -->
-<!-- } -->
 
 <!-- d-article pre  { -->
 <!--   background-color: #dae7f1; -->
@@ -33,14 +24,17 @@ library(tidyverse)
 # https://rstudio.github.io/distill/publish_website.html#github-pages
 
 ```
-I'm Rita a data visualisation consultant and scientific illustrator. I have more than thirteen years of experience in data analysis and visualisation. 
 
-## What I can do for you
+Hello I'm Rita a data visualisation consultant and scientific illustrator. I have more than thirteen years of experience in data analysis and visualisation.
+
+## What I can do for you 
 Do you have data to visualise? I will find the best way to visualise them. 
 
 Do you have data to analyse and visualise? Let's discuss about which analysis would be the best and how I will visualise your data.
 
-Do you need and R packages for your company? I have several years of experience in creating R packages for internal project. In the last years, I have also developed two packages available on CRAN 
+Do you need and R packages for your company? I have several years of experience in creating R packages for internal project. In the last years, I have also developed two packages available on CRAN: 
+[GenderInfer](https://cran.r-project.org/web/packages/GenderInfer/index.html) and 
+[cry](https://jfoadi.github.io/cry/) 
 
 Do you need a graphical abstract or a scientific illustration? I'm here to listen to you and create the illustration that best fit your needs.
 
@@ -71,8 +65,8 @@ first <- read_csv("data/first_page.csv")
   )
 ```
 
-## What I cannot do for you
+## What I cannot do for you 
 I don't work on project that involves only data science without data visualisation.
 
-I don't do dashboard.
+I don't do dashboard. 
 
