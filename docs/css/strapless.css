@@ -4596,6 +4596,8 @@ template {
 .card-img-bottom {
   flex-shrink: 0;
   width: 100%;
+  /*add new line of code*/
+  object-fit: cover;
 }
 
 .card-img,

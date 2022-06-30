@@ -11,7 +11,7 @@
 /* Optional: embed custom fonts here with `@import`          */
 /* This must remain at the top of this file.                 */
 
-
+/*@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200&display=swap')*/
 
 html {
   /*-- Main font sizes --*/
@@ -28,10 +28,10 @@ html {
   --fig-cap-color:   rgba(0, 0, 0, 0.6);
   /*-- Specify custom fonts ~~~ must be imported above   --*/
   font-family: helvetica;
- /* --heading-font:    helvetica;
+  --heading-font:    helvetica;
   --mono-font:       monospace;
   --body-font:       sans-serif;
-  --navbar-font:     sans-serif; */ /* websites + blogs only */
+  --navbar-font:     sans-serif;  /* websites + blogs only */
 }
 
 /*-- ARTICLE METADATA --*/
@@ -61,7 +61,7 @@ d-appendix {
 
 .distill-site-header {
   --title-size:       18px;
-  --text-color:        rgba(255, 255, 255, 0.8);
+  --text-color:       rgba(255, 255, 255, 0.8);
   --text-size:        16px;
   --hover-color:      white;
   --bkgd-color:       /*#31b7e8*/ #0F2E3D;
@@ -76,6 +76,25 @@ d-appendix {
 
 /*-- Additional custom styles --*/
 /* Add any additional CSS rules below                      */
-div {
+/*d-article{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 80px;
+    margin-right: 80px;
+    grid-column-gap: 32px;
+}
+*/
+h1, h2, h3, h4, h5, h6 {
+  /*font-family: "Lexend";*/
+  letter-spacing: 2px;
+  line-height: 2 rem; /* increase so wrapping headers don't overlap*/
+}
+/*div {
   height: 200px;
+}*/
+p {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
