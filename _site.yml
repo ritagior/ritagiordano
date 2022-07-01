@@ -3,7 +3,9 @@ title: "Rita Giordano"
 #theme: theme.css
 description: |
   Rita Giordano
+google_analytics: "G-9QWXZSW3LS"
 output_dir: "docs"
+
 navbar:
   right:
     - text: "Home"
