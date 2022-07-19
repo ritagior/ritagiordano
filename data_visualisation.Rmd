@@ -24,10 +24,10 @@ first %>%
   bs4cards::cards(
     link = url,
     image = src,
-    spacing = 5,
+    spacing = 4,
     tags = paste("all;", tag),
-    width = 3,
-    #width = "row-cols-2",
+    #width = 2,
+    width = "row-cols-2",
     border_width = 0,
     layout = "image-only",
     breakpoint = 5,
