@@ -1,7 +1,7 @@
 ---
 title: "Rita Giordano"
-description: |
-  Data visualisation and scientific illustration
+# description: |
+#   Data visualisation and scientific illustration
 site: distill::distill_website
 css: "css/strapless.css"
 header-includes:
@@ -23,6 +23,10 @@ library(tidyverse)
 # Learn more about publishing to GitHub Pages at:
 # https://rstudio.github.io/distill/publish_website.html#github-pages
 
+```
+
+```{r layout="l-page"}
+knitr::include_graphics("logo.jpg")
 ```
 
 Hello I'm Rita a data visualisation consultant and scientific illustrator. I have more than thirteen years of experience in data analysis and visualisation.
