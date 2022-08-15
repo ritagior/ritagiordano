@@ -7,6 +7,14 @@ output: distill::distill_article
 css: "css/strapless.css"
 ---
 
+<style type="text/css">
+.main-container {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
