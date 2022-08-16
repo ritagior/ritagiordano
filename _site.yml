@@ -4,6 +4,12 @@ title: "Rita Giordano"
 description: |
   Rita Giordano
 google_analytics: "G-9QWXZSW3LS"
+cookie_consent:
+  style: simple
+  type: express
+  palette: light
+  lang: en
+  cookies_policy: url
 output_dir: "docs"
 
 navbar:

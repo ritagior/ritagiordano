@@ -2074,8 +2074,20 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
   <script src="site_libs/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
-  <script type="text/javascript" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=G-9QWXZSW3LS"></script>
-  <script type="text/javascript" cookie-consent="tracking">
+  <script type="text/javascript" src="https://www.cookieconsent.com/releases/3.1.0/cookie-consent.js"></script>
+  <script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function () {
+  cookieconsent.run({
+  'notice_banner_type':'simple',
+  'consent_type': 'express',
+  'palette': 'light',
+  'language': 'en',
+  'website_name': '.',
+  'cookies_policy_url': 'url',
+  'change_preferences_selector':'#CookiePreferences'
+  });});</script>
+  <script type="text/plain" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=G-9QWXZSW3LS"></script>
+  <script type="text/plain" cookie-consent="tracking">
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -2198,7 +2210,16 @@ class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"><
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
 <div class="distill-site-nav distill-site-footer">
-<p>Rita Giordano, rgiordano@gmx.com</p>
+<p>Rita Giordano <a id='CookiePreferences'>Cookie Preferences</a>
+<a href="https://www.iubenda.com/privacy-policy/89025335" class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe " title="Privacy Policy ">Privacy
+Policy</a><script type="text/javascript">(function (w,d) {var loader =
+function () {var s = d.createElement("script"), tag =
+d.getElementsByTagName("script")[0];
+s.src="https://cdn.iubenda.com/iubenda.js";
+tag.parentNode.insertBefore(s,tag);};
+if(w.addEventListener){w.addEventListener("load", loader, false);}else
+if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload =
+loader;}})(window, document);</script></p>
 </div>
 <!--/radix_placeholder_navigation_after_body-->
 
