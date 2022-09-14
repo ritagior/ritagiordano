@@ -1,9 +1,9 @@
 ---
 title: "Rita Giordano"
 image: "img/photo.jpg"
-color1: "#5A59A3"
-color2: "#C66060"
-angle: 130
+# color1: "#5A59A3"
+# color2: "#C66060"
+# angle: 130
 links:
   - label: '`r fontawesome::fa("linkedin", height = "25px")`'
     url: "https://www.linkedin.com/in/ritagiordano/"
@@ -11,16 +11,17 @@ links:
     url: "https://twitter.com/rgiordano79"
   - label: '`r fontawesome::fa("github", height = "25px")`'
     url: "https://github.com/ritagior"
-  - label: '`r fontawesome::fa("envelope", height = "25px")`'
-    url: "mailto:rgiordano@gmx.com"
+  # - label: '`r fontawesome::fa("envelope", height = "25px")`'
+  #   url: "mailto:rgiordano@gmx.com"
 output:
-  postcards::trestles
-  #postcards::jolla
+  postcards::jolla
+  #postcards::onofre
 ---
 
-Hi! I'm Rita, a UK-based data visualisation designer and scientific illustrator. I have several years of experienced in data analysis and data visualisation. I have a a scientific background with a master in Physics and a PhD in Crystallography. I worked fo several years in academia and I have a deep understanding of scientific research. During these years, as scientist and data scientist, I continuously tried to improve my illustration skills. I did some courses at "Ecole des beaux-arts de Grenoble" and courses at UAL in London. Lastly, I need to imporve my skills in scientific illustration and I took a course in natural history illustration with the University of Newcastle.
+Hi! I'm Rita, a UK-based data visualisation designer and scientific illustrator. I have several years of experienced in data analysis and data visualisation. I got a master in Physics and a PhD in Crystallography. I worked for several years in academia and industry. I have a deep understanding of scientific research and how to communicate scientific results. 
+<!-- During these years, as scientist and data scientist, I continuously tried to improve my illustration skills. I did some courses at "Ecole des beaux-arts de Grenoble" and courses at UAL in London. Lastly, I need to improve my skills in scientific illustration and I took a course in natural history illustration with the University of Newcastle. -->
 
-Do you have projects? Let's talk.
+
 
 ```{r, echo=FALSE, eval=FALSE, echo=FALSE, message=FALSE, warning=FALSE, fig.width= 12, fig.height=8}
 library(tidyverse)

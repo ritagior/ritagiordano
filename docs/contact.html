@@ -88,26 +88,26 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-  <title>Rita Giordano: Data visualisation</title>
+  <title>Rita Giordano: Contact form</title>
 
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Rita Giordano: Data visualisation"/>
+  <meta property="og:title" content="Rita Giordano: Contact form"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Rita Giordano"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Rita Giordano: Data visualisation"/>
+  <meta property="twitter:title" content="Rita Giordano: Contact form"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","output","css"]}},"value":[{"type":"character","attributes":{},"value":["Data visualisation"]},{"type":"character","attributes":{},"value":["distill::distill_article"]},{"type":"character","attributes":{},"value":["css/strapless.css"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","output"]}},"value":[{"type":"character","attributes":{},"value":["Contact form"]},{"type":"character","attributes":{},"value":["distill::distill_article"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2417,7 +2417,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
   <!--/radix_placeholder_site_in_header-->
 
-  <link rel="stylesheet" href="css/strapless.css" type="text/css"/>
 
 </head>
 
@@ -2426,7 +2425,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Data visualisation","authors":[]}
+{"title":"Contact form","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2452,7 +2451,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Data visualisation</h1>
+<h1>Contact form</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -2460,91 +2459,125 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 <div class="d-article">
-<style type="text/css">
-.main-container {
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
+<style>
+
+input[type=email], 
+input[type=password], 
+input[type=text], 
+input[type=submit],
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid var(--blue-color);
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px 15px;
+    width: 100%;
 }
+
+input[type="submit"] { 
+  cursor: pointer
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+<!-- .flex-gap { -->
+<!--   display: inline-flex; -->
+<!--   flex-wrap: wrap; -->
+<!--   gap: 40px; -->
+<!-- } -->
+
+<!-- .emulated-flex-gap > * { -->
+<!--   margin: 20px 0 0 20px; -->
+<!-- } -->
+
+<!-- .emulated-flex-gap { -->
+<!--   display: inline-flex; -->
+<!--   flex-wrap: wrap; -->
+<!--   margin: -20px 0 0 -20px; -->
+<!--   width: calc(100% + 20px); -->
+<!-- } -->
+
+d-title.d-title {
+  display: none;
+}
+
+.welcome {
+  position: absolute;
+  left: 0;
+  top: 25vh;
+  width: 100vw;
+  text-align: center;
+  color: #000;
+}
+#grid {
+  display: grid;
+  height: 100px;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 100px;
+  column-gap: 20px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  top: 30vh;
+}
+
+#top label {
+font-weight: normal;
+font-size: 20px;
+}
+<!-- #grid > div { -->
+<!--   border: 1px solid green; -->
+<!--   background-color: lime; -->
+<!-- } -->
+
+<!-- div { -->
+<!--   outline: 1px dotted gray; -->
+<!-- } -->
+
+<!-- .container { -->
+<!--   width: 300px; -->
+<!--   height: 300px; -->
+<!--   display: grid; -->
+<!--   grid-template-columns: 2fr auto; -->
+<!-- } -->
+
+<!-- .container > :nth-child(2) { -->
+<!--   max-width: 60px; /* 20% x 300px */ -->
+<!-- } -->
+
 </style>
-<h3 id="work">Work</h3>
-<div class="layout-chunk" data-layout="l-page">
-<div>
-<p>
-<button class="btn btn-primary" type="button" onClick="$(&#39;.bs4cards-blahblahblah&#39;).hide(400, &#39;swing&#39;);setTimeout(function() {$(&#39;.bs4cards-all&#39;).show(400, &#39;swing&#39;)}, 400);">all</button>
-<button class="btn btn-primary" type="button" onClick="$(&#39;.bs4cards-blahblahblah&#39;).hide(400, &#39;swing&#39;);setTimeout(function() {$(&#39;.bs4cards-R&#39;).show(400, &#39;swing&#39;)}, 400);">R</button>
-<button class="btn btn-primary" type="button" onClick="$(&#39;.bs4cards-blahblahblah&#39;).hide(400, &#39;swing&#39;);setTimeout(function() {$(&#39;.bs4cards-infographic&#39;).show(400, &#39;swing&#39;)}, 400);">infographic</button>
-<button class="btn btn-primary" type="button" onClick="$(&#39;.bs4cards-blahblahblah&#39;).hide(400, &#39;swing&#39;);setTimeout(function() {$(&#39;.bs4cards-visnetwork&#39;).show(400, &#39;swing&#39;)}, 400);">visnetwork</button>
-<button class="btn btn-primary" type="button" onClick="$(&#39;.bs4cards-blahblahblah&#39;).hide(400, &#39;swing&#39;);setTimeout(function() {$(&#39;.bs4cards-networkD3&#39;).show(400, &#39;swing&#39;)}, 400);">networkD3</button>
-<button class="btn btn-primary" type="button" onClick="$(&#39;.bs4cards-blahblahblah&#39;).hide(400, &#39;swing&#39;);setTimeout(function() {$(&#39;.bs4cards-ggplot2&#39;).show(400, &#39;swing&#39;)}, 400);">ggplot2</button>
-<button class="btn btn-primary" type="button" onClick="$(&#39;.bs4cards-blahblahblah&#39;).hide(400, &#39;swing&#39;);setTimeout(function() {$(&#39;.bs4cards-d3&#39;).show(400, &#39;swing&#39;)}, 400);">d3</button>
-<button class="btn btn-primary" type="button" onClick="$(&#39;.bs4cards-blahblahblah&#39;).hide(400, &#39;swing&#39;);setTimeout(function() {$(&#39;.bs4cards-htmltools&#39;).show(400, &#39;swing&#39;)}, 400);">htmltools</button>
-<button class="btn btn-primary" type="button" onClick="$(&#39;.bs4cards-blahblahblah&#39;).hide(400, &#39;swing&#39;);setTimeout(function() {$(&#39;.bs4cards-Adobe-Illustrator&#39;).show(400, &#39;swing&#39;)}, 400);">Adobe Illustrator</button>
-<button class="btn btn-primary" type="button" onClick="$(&#39;.bs4cards-blahblahblah&#39;).hide(400, &#39;swing&#39;);setTimeout(function() {$(&#39;.bs4cards-Flourish&#39;).show(400, &#39;swing&#39;)}, 400);">Flourish</button>
-</p>
-<div class="row p-0 row-cols-2" style="margin-left: -.6rem; margin-right: -.6rem; margin-top: 1rem; margin-bottom: 1rem; ">
-<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah bs4cards-all bs4cards-R bs4cards-infographic" style="padding: .6rem ; border-width: 0; border-radius: .6rem .6rem .6rem .6rem ;">
-<img src="img/datavis/infographic_NHS_rs.jpg" class="card-img" style="border-style:solid; border-color:inherits; border-width:0; border-radius: .6rem .6rem .6rem .6rem ;"/>
+<!-- <div style="display: flex;"> -->
+<!-- <div> -->
+<h1>
+Do you have a project? Lets talk
+</h1>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/images.jpeg" width="112" /></p>
 </div>
-<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah bs4cards-all bs4cards-R bs4cards-infographic" style="padding: .6rem ; border-width: 0; border-radius: .6rem .6rem .6rem .6rem ;">
-<a href="https://ritagiordano.co.uk/dvs_survey.html" style="color: inherit;">
-<img src="img/datavis/info_survey_low_rs.jpg" class="card-img" style="border-style:solid; border-color:inherits; border-width:0; border-radius: .6rem .6rem .6rem .6rem ;"/>
-</a>
+<!-- <div> -->
+<div class="layout-chunk" data-layout="l-body">
+<form
+  action="https://formspree.io/f/xzbwdoza"
+  method="POST"
+>
+<fieldset id="fs-frm-inputs"><br><br>
+    <label for="full-name">Full Name</label><br><br>
+    <input type="text" name="name" id="full-name" placeholder="First and Last" required=""><br><br>
+    <label for="email-address">Email Address</label><br><br>
+    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required=""><br><br>
+    <label for="message">Message</label><br><br>
+    <textarea rows="5" cols="50" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea><br><br>
+    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission"><br><br>
+  </fieldset>
+  <input type="submit" value="Submit">
+</form>
 </div>
-<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah bs4cards-all bs4cards-R bs4cards-infographic" style="padding: .6rem ; border-width: 0; border-radius: .6rem .6rem .6rem .6rem ;">
-<img src="img/datavis/gender_pay_gap_england_rs.jpg" class="card-img" style="border-style:solid; border-color:inherits; border-width:0; border-radius: .6rem .6rem .6rem .6rem ;"/>
-</div>
-<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah bs4cards-all bs4cards-R bs4cards-visnetwork bs4cards-networkD3" style="padding: .6rem ; border-width: 0; border-radius: .6rem .6rem .6rem .6rem ;">
-<a href="https://ritagiordano.co.uk/words_enviromental_science.html" style="color: inherit;">
-<img src="img/datavis/network_rs.jpg" class="card-img" style="border-style:solid; border-color:inherits; border-width:0; border-radius: .6rem .6rem .6rem .6rem ;"/>
-</a>
-</div>
-<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah bs4cards-all bs4cards-R bs4cards-ggplot2" style="padding: .6rem ; border-width: 0; border-radius: .6rem .6rem .6rem .6rem ;">
-<a href="https://ritagiordano.co.uk/world_fertility_rate.html" style="color: inherit;">
-<img src="img/datavis/fertility_rs.jpg" class="card-img" style="border-style:solid; border-color:inherits; border-width:0; border-radius: .6rem .6rem .6rem .6rem ;"/>
-</a>
-</div>
-<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah bs4cards-all bs4cards-R bs4cards-ggplot2" style="padding: .6rem ; border-width: 0; border-radius: .6rem .6rem .6rem .6rem ;">
-<a href="https://ritagiordano.co.uk/solar_consumption.html" style="color: inherit;">
-<img src="img/datavis/solar_rs.jpg" class="card-img" style="border-style:solid; border-color:inherits; border-width:0; border-radius: .6rem .6rem .6rem .6rem ;"/>
-</a>
-</div>
-<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah bs4cards-all bs4cards-R bs4cards-d3 bs4cards-networkD3 bs4cards-htmltools" style="padding: .6rem ; border-width: 0; border-radius: .6rem .6rem .6rem .6rem ;">
-<img src="img/work/sankey_cv.jpg" class="card-img" style="border-style:solid; border-color:inherits; border-width:0; border-radius: .6rem .6rem .6rem .6rem ;"/>
-</div>
-<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah bs4cards-all bs4cards-R bs4cards-ggplot2 bs4cards-Adobe-Illustrator" style="padding: .6rem ; border-width: 0; border-radius: .6rem .6rem .6rem .6rem ;">
-<img src="img/personal/leads_web.png" class="card-img" style="border-style:solid; border-color:inherits; border-width:0; border-radius: .6rem .6rem .6rem .6rem ;"/>
-</div>
-<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah bs4cards-all bs4cards-Flourish" style="padding: .6rem ; border-width: 0; border-radius: .6rem .6rem .6rem .6rem ;">
-<a href="https://ritagiordano.co.uk/world_fertility_rate.html" style="color: inherit;">
-<img src="img/personal/fertility_flou.png" class="card-img" style="border-style:solid; border-color:inherits; border-width:0; border-radius: .6rem .6rem .6rem .6rem ;"/>
-</a>
-</div>
-</div>
-</div>
-</div>
-<!-- # ```{r} -->
-<!-- slickR( -->
-<!--      list.files("img/published/",full.names = TRUE, pattern = 'jpg'), -->
-<!--      objLinks = c("Topic_modeling.html", "Topic_modeling.html"), -->
-<!--      height = 400, -->
-<!--      width = '95%') + -->
-<!--  #%synch% -->
-<!--    # (slickR(c("How articles are connected each other with different subjects", -->
-<!--    #           "Data art of chord diagram with watercolour"), slideType = 'p') + -->
-<!--       settings(arrows = FALSE, autoplay = TRUE) -->
-<!-- ``` -->
-<!-- # ```{r} -->
-<!-- # slickR( -->
-<!-- #     list.files("img/personal/",full.names = TRUE, pattern = 'jpg'), -->
-<!-- #     objLinks = c("World_fertility.html", -->
-<!-- #                  "Solar_consuption.html"), -->
-<!-- #     height = 400, -->
-<!-- #     width = '95%') %synch% -->
-<!-- #   (slickR(c("World fertility rate", -->
-<!-- #             "Household solar consumption in Europe"), slideType = 'p') +  -->
-<!-- #      settings(arrows = FALSE, autoplay = TRUE)) -->
-<!-- ``` -->
+<!-- </div> -->
+<!-- </div> -->
 <div class="sourceCode" id="cb1"><pre
 class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->

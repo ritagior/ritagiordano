@@ -20,6 +20,26 @@ knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
 ```
 
+<!-- ```{r layout="l-page"} -->
+<!-- library(pixture) -->
+
+<!-- pixgallery( -->
+<!--   list.files("img/sciart/", -->
+<!--              full.names = TRUE), -->
+<!--   # caption = c("Chord diagram, topic modelling", "World fertility rate", -->
+<!--   #             "Fertility rate", "Gender pay gap in England", -->
+<!--   #             "Data Visualization Society survey 2021", -->
+<!--   #             "NHS infographic", "Leads", "Topic modelling for journals", -->
+<!--   #             "Sankey diagram with fictional data", -->
+<!--   #             "Solar consuption in Europe"), -->
+<!--   dim = "350px", -->
+<!--   gap = "20px" -->
+<!-- ) -->
+
+<!-- ``` -->
+
+
+
 ```{r}
 # Read in projects csv file 
 first <- read_csv("data/first_page.csv")
@@ -43,7 +63,7 @@ first %>%
     #label_colour = c("#ffffffaa", "#ffffffaa"),
     breakpoint = 5,
     #border_colour = "#ffffffaa"
-    
+
   )
 ```
 

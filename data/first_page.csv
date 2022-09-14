@@ -1,26 +1,28 @@
 title,src,url,description, tag
 Data visualisation,img/chord_survey.png,https://ritagiordano.co.uk/data_visualisation.html,Data visualisation,
 Scientific Illustration,img/cover_web.jpg, https://ritagiordano.co.uk/scientific_illustration.html,Scientific Illustration,
-UCL, img/infographic_NHS.jpg, ,Datavis, R; infographic
-Survey, img/info_survey_low.jpg, https://ritagiordano.co.uk/dvs_survey.html, Datavis, R; infographic
-gender, img/gender_pay_gap_england.jpg, , Datavis, R; infographic
-Network, img/network.jpg, https://ritagiordano.co.uk/words_enviromental_science.html, Datavis, R; visnetwork; networkD3
-Chord, img/published/chord_diagram_topic_final.jpg,
-https://ritagiordano.co.uk/topic_modeling_rsc.html,Datavis, R; circlize
-fertility, img/personal/fertility.jpg, https://ritagiordano.co.uk/world_fertility_rate.html, Datavis, R; ggplot2
+UCL, img/datavis/infographic_NHS_rs.jpg, ,Datavis, R; infographic
+Survey, img/datavis/info_survey_low_rs.jpg, https://ritagiordano.co.uk/dvs_survey.html, Datavis, R; infographic
+gender, img/datavis/gender_pay_gap_england_rs.jpg, , Datavis, R; infographic
+Network, img/datavis/network_rs.jpg, https://ritagiordano.co.uk/words_enviromental_science.html, Datavis, R; visnetwork; networkD3
+fertility, img/datavis/fertility_rs.jpg, https://ritagiordano.co.uk/world_fertility_rate.html, Datavis, R; ggplot2
+solar, img/datavis/solar_rs.jpg, https://ritagiordano.co.uk/solar_consumption.html, Datavis, R; ggplot2
+Sankey, img/work/sankey_cv.jpg, , Datavis, R; d3; networkD3; htmltools
+Leads, img/personal/leads_web.png,  , Datavis, R; ggplot2; Adobe Illustrator
+Chord, img/datavis/chord_diagram_topic_rg.jpg,
+https://ritagiordano.co.uk/topic_modeling_rsc.html, Datavis, R; circlize
 flourish, img/personal/fertility_flou.png, https://ritagiordano.co.uk/world_fertility_rate.html, Datavis, Flourish
-solar, img/personal/solar.jpg, https://ritagiordano.co.uk/solar_consumption.html, Datavis, R; ggplot2
-Sankey, img/sankey_web.jpg, img/sankey_web.jpg, Datavis, R; d3; networkD3; htmltools
-Leads, img/personal/leads_web.png,  img/personal/leads_web.png, Datavis, R; ggplot2; Adobe Illustrator
-graphical_daff, img/graphical_abstract_v1.4_f.jpg, , Sciart, graphical abstract
-Fresnel, img/fresnel_ring.jpg, , Sciart, Logo; digital painting
-Begonia wax semperflorens, img/begonia_wax.jpg, , Sciart, botanical illustration; pen and ink
-Cover,img/cover.jpg, , Sciart, Journal cover; Photoshop; R; watercolour
-Daffodil, img/daffodil.jpg, , Sciart, botanical illustration; watercolour
-Eagle, img/Eagle.jpg, , Sciart, natural history illustration; graphite
-Mushroom, img/Mushroom.jpg, , Sciart, natural history illustration; graphite
-Melon, img/water_melon.jpg, , Sciart, natural history illustration; graphite;botanical illustration
-Logo,img/LeafESPI.jpg, ,Sciart, Logo; pen and ink
+pain, img/Chronic_pain_infog_low.jpg, , Sciart, infographic
+Cover,img/sciart/cover.jpg, https://ritagiordano.co.uk/topic_modeling_rsc.html, Sciart, Journal cover; Photoshop; R; watercolour
+graphical_daff, img/sciart/graphical_abstract_v1.4_low.jpg, , Sciart, graphical abstract
+Fresnel, img/sciart/fresnel_ring.jpg, , Sciart, Logo; digital painting
+Begonia wax semperflorens, img/sciart/begonia_wax.jpg, , Sciart, botanical illustration; pen and ink
+
+Daffodil, img/sciart/daffodil.jpg, , Sciart, botanical illustration; watercolour
+Eagle, img/sciart/Eagle.jpg, , Sciart, natural history illustration; graphite
+Mushroom, img/sciart/Mushroom.jpg, , Sciart, natural history illustration; graphite
+Melon, img/sciart/water_melon.jpg, , Sciart, natural history illustration; graphite;botanical illustration
+Logo,img/sciart/LeafESPI.jpg, ,Sciart, Logo; pen and ink
 
 
 

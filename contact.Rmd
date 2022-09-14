@@ -1,0 +1,118 @@
+---
+title: "Contact form"
+output: distill::distill_article
+---
+<style>
+
+input[type=email], 
+input[type=password], 
+input[type=text], 
+input[type=submit],
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid var(--blue-color);
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px 15px;
+    width: 100%;
+}
+
+input[type="submit"] { 
+  cursor: pointer
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+<!-- .flex-gap { -->
+<!--   display: inline-flex; -->
+<!--   flex-wrap: wrap; -->
+<!--   gap: 40px; -->
+<!-- } -->
+
+<!-- .emulated-flex-gap > * { -->
+<!--   margin: 20px 0 0 20px; -->
+<!-- } -->
+
+<!-- .emulated-flex-gap { -->
+<!--   display: inline-flex; -->
+<!--   flex-wrap: wrap; -->
+<!--   margin: -20px 0 0 -20px; -->
+<!--   width: calc(100% + 20px); -->
+<!-- } -->
+
+d-title.d-title {
+  display: none;
+}
+
+.welcome {
+  position: absolute;
+  left: 0;
+  top: 25vh;
+  width: 100vw;
+  text-align: center;
+  color: #000;
+}
+#grid {
+  display: grid;
+  height: 100px;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 100px;
+  column-gap: 20px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  top: 30vh;
+}
+
+#top label {
+font-weight: normal;
+font-size: 20px;
+}
+<!-- #grid > div { -->
+<!--   border: 1px solid green; -->
+<!--   background-color: lime; -->
+<!-- } -->
+
+<!-- div { -->
+<!--   outline: 1px dotted gray; -->
+<!-- } -->
+
+<!-- .container { -->
+<!--   width: 300px; -->
+<!--   height: 300px; -->
+<!--   display: grid; -->
+<!--   grid-template-columns: 2fr auto; -->
+<!-- } -->
+
+<!-- .container > :nth-child(2) { -->
+<!--   max-width: 60px; /* 20% x 300px */ -->
+<!-- } -->
+
+</style>
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+<!-- <div style="display: flex;"> -->
+
+<!-- <div> -->
+<h1>Do you have a project? Lets talk</h1>
+
+```{r }
+knitr::include_graphics("img/images.jpeg")
+```
+
+<!-- <div> -->
+```{r}
+htmltools::includeHTML("contact_form.html")
+```
+
+<!-- </div> -->
+<!-- </div> -->

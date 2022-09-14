@@ -1,5 +1,6 @@
 ---
-title: "Rita Giordano"
+title: ""
+image: "img/sfondo.jpg"
 # description: |
 #   Data visualisation and scientific illustration
 site: distill::distill_website
@@ -8,41 +9,104 @@ header-includes:
     - \renewcommand{\contentsname}{}
 ---
 
-<!-- d-article pre  { -->
-<!--   background-color: #dae7f1; -->
-<!-- } -->
+<style>
+    
+.parallax {
+  /* The image used */
+  background-image: url('img/sfondo.jpg');
+
+  /* Full height */
+  height:100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.welcome {
+  position: absolute;
+  left: 0;
+  top: 25vh;
+  width: 100vw;
+  text-align: center;
+  color: #000;
+}
+
+.welcome span.title {
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+  font-size: 24px;
+  letter-spacing: 10px;
+  line-height: 1.6;
+}
+
+.welcome span.surrounding {
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+  font-size: 48px;
+  letter-spacing: 5px;
+}
+
+.welcome span.downarrow {
+  font-size: 42px;
+}
+
+
+.downbutton {
+  background: rgba(0,0,0,0);
+  border: none;
+  outline: none;
+  color: #1BC7DC;
+  text-align: center;
+  font-size: 42px;
+}
+
+d-title.d-title {
+  display: none;
+}
+
+d-article {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 30px;
+  margin-right: 30px;
+  grid-column-gap: 32px;
+}
+
+.greeting {
+  min-height: 50vh;
+  padding-top: 25vh;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.25;
+}
+</style>
+
+
+<div class="parallax l-screen">
+<div class="welcome">
+  <span class="surrounding">Rita Giordano<br><br>
+  Data visualisation and scientific illustration</span><br><br>
+   <span class="title">Do you have data to visualise?<br> I will find the best way to visualise them.<br><br>
+   Do you need a graphical abstract or a scientific illustration?<br> I will create the illustration that best fit your needs.
+   </span>
+</div>
+</div>
+
 
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo=F, message=F, warning=F)
 library(tidyverse)
-
-# Learn more about creating websites with Distill at:
-# https://rstudio.github.io/distill/website.html
-
-# Learn more about publishing to GitHub Pages at:
-# https://rstudio.github.io/distill/publish_website.html#github-pages
-
 ```
 
-```{r layout="l-page"}
-knitr::include_graphics("logo.jpg")
+```{r layout="l-screen"}
+knitr::include_graphics("img/sfondo_2.jpg")
 ```
 
-Hello I'm Rita a data visualisation consultant and scientific illustrator. I have more than thirteen years of experience in data analysis and visualisation.
-
-## What I can do for you 
-Do you have data to visualise? I will find the best way to visualise them. 
-
-Do you have data to analyse and visualise? Let's discuss about which analysis would be the best and how I will visualise your data.
-
-Do you need and R packages for your company? I have several years of experience in creating R packages for internal project. In the last years, I have also developed two packages available on CRAN: 
-[GenderInfer](https://cran.r-project.org/web/packages/GenderInfer/index.html) and 
-[cry](https://jfoadi.github.io/cry/) 
-
-Do you need a graphical abstract or a scientific illustration? I'm here to listen to you and create the illustration that best fit your needs.
-
-I code in R and d3.js and I can create static and interactive visualisations.
+<!-- Hello I'm Rita a data visualisation consultant and scientific illustrator. I have more than thirteen years of experience in data analysis and visualisation. -->
 
 ```{r}
 # Read in projects csv file
@@ -65,12 +129,6 @@ first <- read_csv("data/first_page.csv")
      label_colour = c("#ffffffaa", "#ffffffaa"),
      breakpoint = 5,
      #border_colour = "#ffffffaa"
-
   )
 ```
-
-## What I cannot do for you 
-I don't work on project that involves only data science without data visualisation.
-
-I don't do dashboard. 
 
