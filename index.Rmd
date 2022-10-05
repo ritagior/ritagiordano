@@ -7,6 +7,10 @@ site: distill::distill_website
 css: "css/strapless.css"
 header-includes:
     - \renewcommand{\contentsname}{}
+output:
+    distill::distill_article:
+      includes:
+        in_header: banner.html
 ---
 
 <style>
@@ -82,31 +86,58 @@ d-article {
   text-align: center;
   line-height: 1.25;
 }
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.article-banner {
+  width: auto;
+  height: auto;
+  border: 0;
+}
+
+img[src="img/banner.png"] {
+  border: 0;
+  padding: 0;
+  width:60%;
+  margin: 100px 25px 0px 300px;
+  <!-- display: block; -->
+  <!-- margin-left: auto; -->
+  <!-- margin-right: auto; -->
+}
 </style>
 
 
-<div class="parallax l-screen">
-<div class="welcome">
-  <span class="surrounding">Rita Giordano<br><br>
-  Data visualisation and scientific illustration</span><br><br>
-   <span class="title">Do you have data to visualise?<br> I will find the best way to visualise them.<br><br>
-   Do you need a graphical abstract or a scientific illustration?<br> I will create the illustration that best fit your needs.
-   </span>
-</div>
-</div>
 
-
+<!-- <div class="article-header"> -->
+<!--       <img src="img/banner.png" class="article-banner" alt="Bottom left illustration of human upper body with signal that the brain send to the body"> -->
+<!-- </div> -->
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo=F, message=F, warning=F)
 library(tidyverse)
 ```
 
-```{r layout="l-screen"}
-knitr::include_graphics("img/sfondo_2.jpg")
-```
 
-<!-- Hello I'm Rita a data visualisation consultant and scientific illustrator. I have more than thirteen years of experience in data analysis and visualisation. -->
+
+<!-- ```{r} -->
+<!-- knitr::include_graphics("img/banner.png") -->
+<!-- ``` -->
+
+
+
+<!-- <div class="parallax l-screen"> -->
+
+<span class="title">
+We provide data visualisation consultancy, workshop for scientist and company on how to create data visualisation with R and scientific illustrations.</span>
+<!-- </div> -->
+
+<!-- <span class="title">Do you have data to visualise?<br> I will find the best way to visualise them.<br><br> -->
+<!--    Do you need a graphical abstract or a scientific illustration?<br> I will create the illustration that best fit your needs. -->
+<!--    </span> -->
 
 ```{r}
 # Read in projects csv file
@@ -131,4 +162,5 @@ first <- read_csv("data/first_page.csv")
      #border_colour = "#ffffffaa"
   )
 ```
+
 

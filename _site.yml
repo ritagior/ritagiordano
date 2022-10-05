@@ -13,6 +13,9 @@ cookie_consent:
 output_dir: "docs"
 
 navbar:
+  logo:
+    image: img/logo_iniziali.png
+    href: https://ritagiordano.co.uk
   right:
     - text: "Home"
       href:  index.html

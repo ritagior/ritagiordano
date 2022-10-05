@@ -107,7 +107,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","image","site","css","header-includes"]}},"value":[{"type":"character","attributes":{},"value":[""]},{"type":"character","attributes":{},"value":["img/sfondo.jpg"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["css/strapless.css"]},{"type":"character","attributes":{},"value":["\\renewcommand{\\contentsname}{}"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","image","site","css","header-includes","output"]}},"value":[{"type":"character","attributes":{},"value":[""]},{"type":"character","attributes":{},"value":["img/sfondo.jpg"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["css/strapless.css"]},{"type":"character","attributes":{},"value":["\\renewcommand{\\contentsname}{}"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["includes"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["in_header"]}},"value":[{"type":"character","attributes":{},"value":["banner.html"]}]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2208,9 +2208,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article{
       margin-top: 0px;
       margin-bottom: 0px;
-      margin-left: 30px;
-      margin-right: 30px;
-      grid-column-gap: 32px;
+      margin-left: 10px;
+      margin-right: 20px;
+      grid-column-gap: 60px;
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Lexend', sans-serif;
@@ -2416,6 +2416,18 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   gtag('config', 'G-9QWXZSW3LS');
   </script>
   <!--/radix_placeholder_site_in_header-->
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <title></title>
+    </head>
+    <body>
+      <div class="article-header">
+        <img src="img/banner.png" class="article-banner" alt="">
+      </div>
+    </body>
+  </html>
 
   <link rel="stylesheet" href="css/strapless.css" type="text/css"/>
 
@@ -2434,6 +2446,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <header class="header header--fixed" role="banner">
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
+<a class="logo" href="https://ritagiordano.co.uk">
+<img src="img/logo_iniziali.png" alt="Logo"/>
+</a>
 <a href="index.html" class="title">Rita Giordano</a>
 <input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
 </div>
@@ -2533,21 +2548,42 @@ d-article {
   text-align: center;
   line-height: 1.25;
 }
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.article-banner {
+  width: auto;
+  height: auto;
+  border: 0;
+}
+
+img[src="img/banner.png"] {
+  border: 0;
+  padding: 0;
+  width:60%;
+  margin: 100px 25px 0px 300px;
+  <!-- display: block; -->
+  <!-- margin-left: auto; -->
+  <!-- margin-right: auto; -->
+}
 </style>
-<div class="parallax l-screen">
-<div class="welcome">
-<p><span class="surrounding">Rita Giordano<br><br> Data visualisation
-and scientific illustration</span><br><br> <span class="title">Do you
-have data to visualise?<br> I will find the best way to visualise
-them.<br><br> Do you need a graphical abstract or a scientific
-illustration?<br> I will create the illustration that best fit your
-needs. </span></p>
-</div>
-</div>
-<div class="layout-chunk" data-layout="l-screen">
-<p><img src="img/sfondo_2.jpg" width="1754" /></p>
-</div>
-<!-- Hello I'm Rita a data visualisation consultant and scientific illustrator. I have more than thirteen years of experience in data analysis and visualisation. -->
+<!-- <div class="article-header"> -->
+<!--       <img src="img/banner.png" class="article-banner" alt="Bottom left illustration of human upper body with signal that the brain send to the body"> -->
+<!-- </div> -->
+<!-- ```{r} -->
+<!-- knitr::include_graphics("img/banner.png") -->
+<!-- ``` -->
+<!-- <div class="parallax l-screen"> -->
+<p><span class="title"> We provide data visualisation consultancy,
+workshop for scientist and company on how to create data visualisation
+with R and scientific illustrations</span> <!-- </div> --></p>
+<!-- <span class="title">Do you have data to visualise?<br> I will find the best way to visualise them.<br><br> -->
+<!--    Do you need a graphical abstract or a scientific illustration?<br> I will create the illustration that best fit your needs. -->
+<!--    </span> -->
 <div class="layout-chunk" data-layout="l-body">
 
 </div>
