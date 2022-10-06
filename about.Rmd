@@ -19,6 +19,13 @@ output:
 ---
 
 Hi! I'm Rita, a UK-based data visualisation designer and scientific illustrator. I have several years of experienced in data analysis and data visualisation. I got a master in Physics and a PhD in Crystallography. I worked for several years in academia and industry. I have a deep understanding of scientific research and how to communicate scientific results. 
+
+
+
+```{r, echo=FALSE}
+knitr::include_graphics("img/homes_animation.gif")
+```
+
 <!-- During these years, as scientist and data scientist, I continuously tried to improve my illustration skills. I did some courses at "Ecole des beaux-arts de Grenoble" and courses at UAL in London. Lastly, I need to improve my skills in scientific illustration and I took a course in natural history illustration with the University of Newcastle. -->
 
 

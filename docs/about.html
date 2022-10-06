@@ -769,21 +769,27 @@
           .distill-site-header {
             font-family: 'Lexend', sans-serif;
             color: #000;
-            background-color: #fff;
+            background-color: #2C7BB6;
             font-size: 20px;
             font-weight: 400;
-            /*--title-size:       18px;
+            --title-size:       18px;
             --text-color:       rgba(255, 255, 255, 0.8);
             --text-size:        16px;
             --hover-color:      white;
-            --bkgd-color:       /*#31b7e8*/
+            --bkgd-color:       #2C7BB6;
           }
 
+          .distill-site-nav {
+            color: rgba(255, 255, 255, 0.8);
+            background-color: #2C7BB6;
+            font-size: 15px;
+            font-weight: 300;
+          }
           .distill-site-footer {
-            --text-color:       white;
-            --text-size:        1px;
+            --text-color:       black;
+            --text-size:        15px;
             --hover-color:      white;
-            --bkgd-color:       lightgrey;
+            --bkgd-color:       white/*#2C7BB6*/;
           }
 
           /*-- Additional custom styles --*/
@@ -791,9 +797,10 @@
           d-article{
               margin-top: 0px;
               margin-bottom: 0px;
-              margin-left: 30px;
-              margin-right: 30px;
-              grid-column-gap: 32px;
+              margin-left: 10px;
+              margin-right: 20px;
+              grid-column-gap: 60px;
+              border-top: 0px;
           }
           h1, h2, h3, h4, h5, h6 {
             font-family: 'Lexend', sans-serif;
@@ -978,6 +985,9 @@
           <header class="header header--fixed" role="banner">
           <nav class="distill-site-nav distill-site-header">
           <div class="nav-left">
+          <a class="logo" href="https://ritagiordano.co.uk">
+          <img src="img/logo_iniziali.png" alt="Logo"/>
+          </a>
           <a href="index.html" class="title">Rita Giordano</a>
           <input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
           </div>
@@ -1010,8 +1020,9 @@
               a master in Physics and a PhD in Crystallography. I worked
               for several years in academia and industry. I have a deep
               understanding of scientific research and how to
-              communicate scientific results.
-              <!-- During these years, as scientist and data scientist, I continuously tried to improve my illustration skills. I did some courses at "Ecole des beaux-arts de Grenoble" and courses at UAL in London. Lastly, I need to improve my skills in scientific illustration and I took a course in natural history illustration with the University of Newcastle. --></p>
+              communicate scientific results.</p>
+              <p><img src="img/homes_animation.gif" /><!-- --></p>
+              <!-- During these years, as scientist and data scientist, I continuously tried to improve my illustration skills. I did some courses at "Ecole des beaux-arts de Grenoble" and courses at UAL in London. Lastly, I need to improve my skills in scientific illustration and I took a course in natural history illustration with the University of Newcastle. -->
             </div>
             <div class="col-11 mt-3 text-center d-block d-sm-none">
               <p>Hi! I’m Rita, a UK-based data visualisation designer
@@ -1020,8 +1031,9 @@
               a master in Physics and a PhD in Crystallography. I worked
               for several years in academia and industry. I have a deep
               understanding of scientific research and how to
-              communicate scientific results.
-              <!-- During these years, as scientist and data scientist, I continuously tried to improve my illustration skills. I did some courses at "Ecole des beaux-arts de Grenoble" and courses at UAL in London. Lastly, I need to improve my skills in scientific illustration and I took a course in natural history illustration with the University of Newcastle. --></p>
+              communicate scientific results.</p>
+              <p><img src="img/homes_animation.gif" /><!-- --></p>
+              <!-- During these years, as scientist and data scientist, I continuously tried to improve my illustration skills. I did some courses at "Ecole des beaux-arts de Grenoble" and courses at UAL in London. Lastly, I need to improve my skills in scientific illustration and I took a course in natural history illustration with the University of Newcastle. -->
             </div>
           </div>
 
@@ -1089,7 +1101,11 @@
           <!--radix_placeholder_site_after_body-->
           <!--/radix_placeholder_site_after_body-->
           <!--radix_placeholder_navigation_after_body-->
+          <div class="distill-site-nav distill-site-footer">
+          <p>© Copyright 2022 Rita Giordano</p>
+          </div>
           <!--/radix_placeholder_navigation_after_body-->
+
     
   </body>
 </html>
