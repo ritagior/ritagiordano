@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
 ```
 
-### Work
+
 ```{r, layout="l-page"}
 first <- read_csv("data/first_page.csv")
 first %>% 

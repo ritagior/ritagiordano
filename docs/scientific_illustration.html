@@ -90,27 +90,24 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_meta_tags-->
   <title>Rita Giordano: Scientific Illustration</title>
 
-  <meta property="description" itemprop="description" content="Journal cover, botanical and natural illustration."/>
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
   <meta property="og:title" content="Rita Giordano: Scientific Illustration"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="Journal cover, botanical and natural illustration."/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Rita Giordano"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
   <meta property="twitter:title" content="Rita Giordano: Scientific Illustration"/>
-  <meta property="twitter:description" content="Journal cover, botanical and natural illustration."/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output","css"]}},"value":[{"type":"character","attributes":{},"value":["Scientific Illustration"]},{"type":"character","attributes":{},"value":["Journal cover, botanical and natural illustration.\n"]},{"type":"character","attributes":{},"value":["distill::distill_article"]},{"type":"character","attributes":{},"value":["css/strapless.css"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","output","css"]}},"value":[{"type":"character","attributes":{},"value":["Scientific Illustration"]},{"type":"character","attributes":{},"value":["distill::distill_article"]},{"type":"character","attributes":{},"value":["css/strapless.css"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2189,21 +2186,27 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   .distill-site-header {
     font-family: 'Lexend', sans-serif;
     color: #000;
-    background-color: #fff;
+    background-color: #2C7BB6;
     font-size: 20px;
     font-weight: 400;
-    /*--title-size:       18px;
+    --title-size:       18px;
     --text-color:       rgba(255, 255, 255, 0.8);
     --text-size:        16px;
     --hover-color:      white;
-    --bkgd-color:       /*#31b7e8*/
+    --bkgd-color:       #2C7BB6;
   }
 
+  .distill-site-nav {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #2C7BB6;
+    font-size: 15px;
+    font-weight: 300;
+  }
   .distill-site-footer {
-    --text-color:       white;
-    --text-size:        1px;
+    --text-color:       black;
+    --text-size:        15px;
     --hover-color:      white;
-    --bkgd-color:       lightgrey;
+    --bkgd-color:       white/*#2C7BB6*/;
   }
 
   /*-- Additional custom styles --*/
@@ -2211,9 +2214,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article{
       margin-top: 0px;
       margin-bottom: 0px;
-      margin-left: 30px;
-      margin-right: 30px;
-      grid-column-gap: 32px;
+      margin-left: 10px;
+      margin-right: 20px;
+      grid-column-gap: 60px;
+      border-top: 0px;
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Lexend', sans-serif;
@@ -2429,7 +2433,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Scientific Illustration","description":"Journal cover, botanical and natural illustration.","authors":[]}
+{"title":"Scientific Illustration","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2437,6 +2441,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <header class="header header--fixed" role="banner">
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
+<a class="logo" href="https://ritagiordano.co.uk">
+<img src="img/logo_iniziali.png" alt="Logo"/>
+</a>
 <a href="index.html" class="title">Rita Giordano</a>
 <input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
 </div>
@@ -2458,7 +2465,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <h1>Scientific Illustration</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>Journal cover, botanical and natural illustration.</p></p>
+
 </div>
 
 
@@ -2469,6 +2476,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   margin-left: auto;
   margin-right: auto;
 }
+
+<!-- d-title.d-title { -->
+<!--   display: none; -->
+<!-- } -->
+
 </style>
 <!-- ```{r layout="l-page"} -->
 <!-- library(pixture) -->
@@ -2492,46 +2504,48 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div>
 <p>
 <button class="btn btn-primary" type="button" onClick="$(&#39;.bs4cards-blahblahblah&#39;).hide(400, &#39;swing&#39;);setTimeout(function() {$(&#39;.bs4cards-all&#39;).show(400, &#39;swing&#39;)}, 400);">all</button>
+<button class="btn btn-primary" type="button" onClick="$(&#39;.bs4cards-blahblahblah&#39;).hide(400, &#39;swing&#39;);setTimeout(function() {$(&#39;.bs4cards-infographic&#39;).show(400, &#39;swing&#39;)}, 400);">infographic</button>
+<button class="btn btn-primary" type="button" onClick="$(&#39;.bs4cards-blahblahblah&#39;).hide(400, &#39;swing&#39;);setTimeout(function() {$(&#39;.bs4cards-medical-illustration&#39;).show(400, &#39;swing&#39;)}, 400);">medical illustration</button>
 <button class="btn btn-primary" type="button" onClick="$(&#39;.bs4cards-blahblahblah&#39;).hide(400, &#39;swing&#39;);setTimeout(function() {$(&#39;.bs4cards-Journal-cover&#39;).show(400, &#39;swing&#39;)}, 400);">Journal cover</button>
-<button class="btn btn-primary" type="button" onClick="$(&#39;.bs4cards-blahblahblah&#39;).hide(400, &#39;swing&#39;);setTimeout(function() {$(&#39;.bs4cards-Photoshop&#39;).show(400, &#39;swing&#39;)}, 400);">Photoshop</button>
-<button class="btn btn-primary" type="button" onClick="$(&#39;.bs4cards-blahblahblah&#39;).hide(400, &#39;swing&#39;);setTimeout(function() {$(&#39;.bs4cards-R&#39;).show(400, &#39;swing&#39;)}, 400);">R</button>
-<button class="btn btn-primary" type="button" onClick="$(&#39;.bs4cards-blahblahblah&#39;).hide(400, &#39;swing&#39;);setTimeout(function() {$(&#39;.bs4cards-watercolour&#39;).show(400, &#39;swing&#39;)}, 400);">watercolour</button>
 <button class="btn btn-primary" type="button" onClick="$(&#39;.bs4cards-blahblahblah&#39;).hide(400, &#39;swing&#39;);setTimeout(function() {$(&#39;.bs4cards-graphical-abstract&#39;).show(400, &#39;swing&#39;)}, 400);">graphical abstract</button>
-<button class="btn btn-primary" type="button" onClick="$(&#39;.bs4cards-blahblahblah&#39;).hide(400, &#39;swing&#39;);setTimeout(function() {$(&#39;.bs4cards-Logo&#39;).show(400, &#39;swing&#39;)}, 400);">Logo</button>
-<button class="btn btn-primary" type="button" onClick="$(&#39;.bs4cards-blahblahblah&#39;).hide(400, &#39;swing&#39;);setTimeout(function() {$(&#39;.bs4cards-digital-painting&#39;).show(400, &#39;swing&#39;)}, 400);">digital painting</button>
 <button class="btn btn-primary" type="button" onClick="$(&#39;.bs4cards-blahblahblah&#39;).hide(400, &#39;swing&#39;);setTimeout(function() {$(&#39;.bs4cards-botanical-illustration&#39;).show(400, &#39;swing&#39;)}, 400);">botanical illustration</button>
-<button class="btn btn-primary" type="button" onClick="$(&#39;.bs4cards-blahblahblah&#39;).hide(400, &#39;swing&#39;);setTimeout(function() {$(&#39;.bs4cards-pen-and-ink&#39;).show(400, &#39;swing&#39;)}, 400);">pen and ink</button>
 <button class="btn btn-primary" type="button" onClick="$(&#39;.bs4cards-blahblahblah&#39;).hide(400, &#39;swing&#39;);setTimeout(function() {$(&#39;.bs4cards-natural-history-illustration&#39;).show(400, &#39;swing&#39;)}, 400);">natural history illustration</button>
-<button class="btn btn-primary" type="button" onClick="$(&#39;.bs4cards-blahblahblah&#39;).hide(400, &#39;swing&#39;);setTimeout(function() {$(&#39;.bs4cards-graphite&#39;).show(400, &#39;swing&#39;)}, 400);">graphite</button>
+<button class="btn btn-primary" type="button" onClick="$(&#39;.bs4cards-blahblahblah&#39;).hide(400, &#39;swing&#39;);setTimeout(function() {$(&#39;.bs4cards-logo&#39;).show(400, &#39;swing&#39;)}, 400);">logo</button>
 </p>
 <div class="row p-0 row-cols-2" style="margin-left: -1rem; margin-right: -1rem; margin-top: 1rem; margin-bottom: 1rem; ">
-<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah bs4cards-all bs4cards-Journal-cover bs4cards-Photoshop bs4cards-R bs4cards-watercolour" style="padding: 1rem ; border-width: 0; border-radius: .6rem .6rem .6rem .6rem ;">
+<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah bs4cards-all bs4cards-infographic bs4cards-medical-illustration" style="padding: 1rem ; border-width: 0; border-radius: .6rem .6rem .6rem .6rem ;">
+<img src="img/sciart/croniuc_pain%2072dpi.png" class="card-img" style="border-style:solid; border-color:inherits; border-width:0; border-radius: .6rem .6rem .6rem .6rem ;"/>
+</div>
+<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah bs4cards-all bs4cards-Journal-cover" style="padding: 1rem ; border-width: 0; border-radius: .6rem .6rem .6rem .6rem ;">
 <a href="https://ritagiordano.co.uk/topic_modeling_rsc.html" style="color: inherit;">
 <img src="img/sciart/cover.jpg" class="card-img" style="border-style:solid; border-color:inherits; border-width:0; border-radius: .6rem .6rem .6rem .6rem ;"/>
 </a>
 </div>
+<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah bs4cards-all bs4cards-medical-illustration" style="padding: 1rem ; border-width: 0; border-radius: .6rem .6rem .6rem .6rem ;">
+<img src="img/sciart/sars_cov_2_final.jpg" class="card-img" style="border-style:solid; border-color:inherits; border-width:0; border-radius: .6rem .6rem .6rem .6rem ;"/>
+</div>
 <div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah bs4cards-all bs4cards-graphical-abstract" style="padding: 1rem ; border-width: 0; border-radius: .6rem .6rem .6rem .6rem ;">
 <img src="img/sciart/graphical_abstract_v1.4_low.jpg" class="card-img" style="border-style:solid; border-color:inherits; border-width:0; border-radius: .6rem .6rem .6rem .6rem ;"/>
 </div>
-<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah bs4cards-all bs4cards-Logo bs4cards-digital-painting" style="padding: 1rem ; border-width: 0; border-radius: .6rem .6rem .6rem .6rem ;">
-<img src="img/sciart/fresnel_ring.jpg" class="card-img" style="border-style:solid; border-color:inherits; border-width:0; border-radius: .6rem .6rem .6rem .6rem ;"/>
-</div>
-<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah bs4cards-all bs4cards-botanical-illustration bs4cards-pen-and-ink" style="padding: 1rem ; border-width: 0; border-radius: .6rem .6rem .6rem .6rem ;">
-<img src="img/sciart/begonia_wax.jpg" class="card-img" style="border-style:solid; border-color:inherits; border-width:0; border-radius: .6rem .6rem .6rem .6rem ;"/>
-</div>
-<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah bs4cards-all bs4cards-botanical-illustration bs4cards-watercolour" style="padding: 1rem ; border-width: 0; border-radius: .6rem .6rem .6rem .6rem ;">
+<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah bs4cards-all bs4cards-botanical-illustration" style="padding: 1rem ; border-width: 0; border-radius: .6rem .6rem .6rem .6rem ;">
 <img src="img/sciart/daffodil.jpg" class="card-img" style="border-style:solid; border-color:inherits; border-width:0; border-radius: .6rem .6rem .6rem .6rem ;"/>
 </div>
-<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah bs4cards-all bs4cards-natural-history-illustration bs4cards-graphite" style="padding: 1rem ; border-width: 0; border-radius: .6rem .6rem .6rem .6rem ;">
+<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah bs4cards-all bs4cards-botanical-illustration" style="padding: 1rem ; border-width: 0; border-radius: .6rem .6rem .6rem .6rem ;">
+<img src="img/sciart/begonia_wax.jpg" class="card-img" style="border-style:solid; border-color:inherits; border-width:0; border-radius: .6rem .6rem .6rem .6rem ;"/>
+</div>
+<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah bs4cards-all bs4cards-natural-history-illustration" style="padding: 1rem ; border-width: 0; border-radius: .6rem .6rem .6rem .6rem ;">
 <img src="img/sciart/Eagle.jpg" class="card-img" style="border-style:solid; border-color:inherits; border-width:0; border-radius: .6rem .6rem .6rem .6rem ;"/>
 </div>
-<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah bs4cards-all bs4cards-natural-history-illustration bs4cards-graphite" style="padding: 1rem ; border-width: 0; border-radius: .6rem .6rem .6rem .6rem ;">
+<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah bs4cards-all bs4cards-natural-history-illustration" style="padding: 1rem ; border-width: 0; border-radius: .6rem .6rem .6rem .6rem ;">
 <img src="img/sciart/Mushroom.jpg" class="card-img" style="border-style:solid; border-color:inherits; border-width:0; border-radius: .6rem .6rem .6rem .6rem ;"/>
 </div>
-<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah bs4cards-all bs4cards-natural-history-illustration bs4cards-graphite bs4cards-botanical-illustration" style="padding: 1rem ; border-width: 0; border-radius: .6rem .6rem .6rem .6rem ;">
+<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah bs4cards-all bs4cards-natural-history-illustration bs4cards-botanical-illustration" style="padding: 1rem ; border-width: 0; border-radius: .6rem .6rem .6rem .6rem ;">
 <img src="img/sciart/water_melon.jpg" class="card-img" style="border-style:solid; border-color:inherits; border-width:0; border-radius: .6rem .6rem .6rem .6rem ;"/>
 </div>
-<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah bs4cards-all bs4cards-Logo bs4cards-pen-and-ink" style="padding: 1rem ; border-width: 0; border-radius: .6rem .6rem .6rem .6rem ;">
+<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah bs4cards-all bs4cards-logo" style="padding: 1rem ; border-width: 0; border-radius: .6rem .6rem .6rem .6rem ;">
+<img src="img/sciart/fresnel_ring.jpg" class="card-img" style="border-style:solid; border-color:inherits; border-width:0; border-radius: .6rem .6rem .6rem .6rem ;"/>
+</div>
+<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah bs4cards-all bs4cards-logo" style="padding: 1rem ; border-width: 0; border-radius: .6rem .6rem .6rem .6rem ;">
 <img src="img/sciart/LeafESPI.jpg" class="card-img" style="border-style:solid; border-color:inherits; border-width:0; border-radius: .6rem .6rem .6rem .6rem ;"/>
 </div>
 </div>
@@ -2553,7 +2567,11 @@ class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"><
 <div class="appendix-bottom"></div>
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
+<div class="distill-site-nav distill-site-footer">
+<p>© Copyright 2022 Rita Giordano</p>
+</div>
 <!--/radix_placeholder_navigation_after_body-->
+
 
 </body>
 

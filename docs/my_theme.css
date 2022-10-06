@@ -43,21 +43,27 @@ d-appendix {
 .distill-site-header {
   font-family: 'Lexend', sans-serif;
   color: #000;
-  background-color: #fff;
+  background-color: #2C7BB6;
   font-size: 20px;
   font-weight: 400;
-  /*--title-size:       18px;
+  --title-size:       18px;
   --text-color:       rgba(255, 255, 255, 0.8);
   --text-size:        16px;
   --hover-color:      white;
-  --bkgd-color:       /*#31b7e8*/
+  --bkgd-color:       #2C7BB6;
 }
 
+.distill-site-nav {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #2C7BB6;
+  font-size: 15px;
+  font-weight: 300;
+}
 .distill-site-footer {
-  --text-color:       white;
-  --text-size:        1px;
+  --text-color:       black;
+  --text-size:        15px;
   --hover-color:      white;
-  --bkgd-color:       lightgrey;
+  --bkgd-color:       white/*#2C7BB6*/;
 }
 
 /*-- Additional custom styles --*/
@@ -68,6 +74,7 @@ d-article{
     margin-left: 10px;
     margin-right: 20px;
     grid-column-gap: 60px;
+    border-top: 0px;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lexend', sans-serif;

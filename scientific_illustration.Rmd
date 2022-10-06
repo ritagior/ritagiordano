@@ -1,7 +1,7 @@
 ---
 title: "Scientific Illustration"
-description: |
-  Journal cover, botanical and natural illustration.
+# description: |
+#   Journal cover, botanical and natural illustration.
 
 output: distill::distill_article
 css: "css/strapless.css"
@@ -13,6 +13,11 @@ css: "css/strapless.css"
   margin-left: auto;
   margin-right: auto;
 }
+
+<!-- d-title.d-title { -->
+<!--   display: none; -->
+<!-- } -->
+
 </style>
 
 ```{r setup, include=FALSE}
