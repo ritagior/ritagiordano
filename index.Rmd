@@ -99,7 +99,7 @@ d-article {
   border: 0;
 }
 
-img[src="img/banner.png"] {
+img[src="img/banner_2.png"] {
   border: 0;
   padding: 0;
   width:60%;
@@ -132,7 +132,7 @@ library(tidyverse)
 <!-- <div class="parallax l-screen"> -->
 
 <span class="title">
-We provide data visualisation consultancy, workshop how to create data visualisation with R and scientific illustrations.</span>
+We provide data visualisation consultancy, workshop on data visualisation with R and scientific illustrations.</span>
 <!-- </div> -->
 
 <!-- <span class="title">Do you have data to visualise?<br> I will find the best way to visualise them.<br><br> -->

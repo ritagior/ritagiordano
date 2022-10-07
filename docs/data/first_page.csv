@@ -1,6 +1,7 @@
 title,src,url,description, tag
-Data visualisation,img/chord_survey.png,https://ritagiordano.co.uk/data_visualisation.html,Data visualisation,
+Data visualisation,img/datavis/fertility_rs.jpg,https://ritagiordano.co.uk/data_visualisation.html,Data visualisation,
 Scientific Illustration,img/cover_web.jpg, https://ritagiordano.co.uk/scientific_illustration.html,Scientific Illustration,
+Workshop, , , Workshop
 UCL, img/datavis/infographic_NHS_rs.jpg, ,Datavis, R; infographic
 Survey, img/datavis/info_survey_low_rs.jpg, https://ritagiordano.co.uk/dvs_survey.html, Datavis, R; infographic
 gender, img/datavis/gender_pay_gap_england_rs.jpg, , Datavis, R; infographic
@@ -18,6 +19,7 @@ covid, img/sciart/sars_cov_2_final.jpg, , Sciart, medical illustration
 graphical_daff, img/sciart/graphical_abstract_v1.4_low.jpg, , Sciart, graphical abstract
 Daffodil, img/sciart/daffodil.jpg, , Sciart, botanical illustration
 Begonia wax semperflorens, img/sciart/begonia_wax.jpg, , Sciart, botanical illustration
+cake, img/sciart/info_cake_rising.jpg, , Sciart,
 Eagle, img/sciart/Eagle.jpg, , Sciart, natural history illustration
 Mushroom, img/sciart/Mushroom.jpg, , Sciart, natural history illustration
 Melon, img/sciart/water_melon.jpg, , Sciart, natural history illustration;botanical illustration
