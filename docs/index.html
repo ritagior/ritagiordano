@@ -107,7 +107,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","image","site","css","header-includes","output"]}},"value":[{"type":"character","attributes":{},"value":[""]},{"type":"character","attributes":{},"value":["img/sfondo.jpg"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["css/strapless.css"]},{"type":"character","attributes":{},"value":["\\renewcommand{\\contentsname}{}"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["includes"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["in_header"]}},"value":[{"type":"character","attributes":{},"value":["banner.html"]}]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","image","site","css","header-includes"]}},"value":[{"type":"character","attributes":{},"value":[""]},{"type":"character","attributes":{},"value":["img/sfondo.jpg"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["css/strapless.css"]},{"type":"character","attributes":{},"value":["\\renewcommand{\\contentsname}{}"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2423,18 +2423,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   gtag('config', 'G-9QWXZSW3LS');
   </script>
   <!--/radix_placeholder_site_in_header-->
-  <!DOCTYPE html>
-  <html lang="en" dir="ltr">
-    <head>
-      <meta charset="utf-8">
-      <title></title>
-    </head>
-    <body>
-      <div class="article-header">
-        <img src="img/banner_2.png" class="article-banner" alt="">
-      </div>
-    </body>
-  </html>
 
   <link rel="stylesheet" href="css/strapless.css" type="text/css"/>
 
@@ -2568,19 +2556,22 @@ d-article {
   border: 0;
 }
 
-img[src="img/banner_2.png"] {
-  border: 0;
-  padding: 0;
-  width:60%;
-  margin: 100px 25px 0px 300px;
-  <!-- display: block; -->
-  <!-- margin-left: auto; -->
-  <!-- margin-right: auto; -->
+<!-- img[src="img/banner_2.png"] { -->
+<!--   border: 0; -->
+<!--   padding: 0; -->
+<!--   width:100%; -->
+<!--   margin: 100px 25px 0px 100px; -->
+<!--   <!-- display: block; --> -->
+<!--   <!-- margin-left: auto; --> -->
+<!--   <!-- margin-right: auto; --> -->
 }
 </style>
 <!-- <div class="article-header"> -->
 <!--       <img src="img/banner.png" class="article-banner" alt="Bottom left illustration of human upper body with signal that the brain send to the body"> -->
 <!-- </div> -->
+<div class="layout-chunk" data-layout="l-page">
+<p><img src="img/banner_2.png" width="756" /></p>
+</div>
 <!-- ```{r} -->
 <!-- knitr::include_graphics("img/banner.png") -->
 <!-- ``` -->

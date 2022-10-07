@@ -7,10 +7,10 @@ site: distill::distill_website
 css: "css/strapless.css"
 header-includes:
     - \renewcommand{\contentsname}{}
-output:
-    distill::distill_article:
-      includes:
-        in_header: banner.html
+# output:
+#     distill::distill_article:
+#       includes:
+#         in_header: banner.html
 ---
 
 <style>
@@ -99,14 +99,14 @@ d-article {
   border: 0;
 }
 
-img[src="img/banner_2.png"] {
-  border: 0;
-  padding: 0;
-  width:60%;
-  margin: 100px 25px 0px 300px;
-  <!-- display: block; -->
-  <!-- margin-left: auto; -->
-  <!-- margin-right: auto; -->
+<!-- img[src="img/banner_2.png"] { -->
+<!--   border: 0; -->
+<!--   padding: 0; -->
+<!--   width:100%; -->
+<!--   margin: 100px 25px 0px 100px; -->
+<!--   <!-- display: block; --> -->
+<!--   <!-- margin-left: auto; --> -->
+<!--   <!-- margin-right: auto; --> -->
 }
 </style>
 
@@ -116,12 +116,17 @@ img[src="img/banner_2.png"] {
 <!--       <img src="img/banner.png" class="article-banner" alt="Bottom left illustration of human upper body with signal that the brain send to the body"> -->
 <!-- </div> -->
 
+
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo=F, message=F, warning=F)
 library(tidyverse)
 ```
 
 
+```{r, echo=FALSE, layout = "l-page"}
+knitr::include_graphics("img/banner_2.png")
+```
 
 <!-- ```{r} -->
 <!-- knitr::include_graphics("img/banner.png") -->
