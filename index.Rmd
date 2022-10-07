@@ -93,11 +93,11 @@ d-article {
   grid-auto-rows: minmax(100px, auto);
 }
 
-.article-banner {
-  width: auto;
-  height: auto;
-  border: 0;
-}
+<!-- .article-banner { -->
+<!--   width: auto; -->
+<!--   height: auto; -->
+<!--   border: 0; -->
+<!-- } -->
 
 <!-- img[src="img/banner_2.png"] { -->
 <!--   border: 0; -->
