@@ -1,6 +1,8 @@
 @import url(fontawesome-all.min.css);
 /*@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");*/
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200&display=swap')
+/*@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap')*/
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap')
 
 /*
 	Story by HTML5 UP
@@ -157,10 +159,18 @@ input, select, textarea {
 		color: #000000;
 	}
 
+
+/*h2 {
+  font-family: "Handlee", cursive;
+  font-weight: 400;
+  font-style: normal;
+}*/
+
+
 	body, input, select, textarea {
-		font-family: "Lexend", sans-serif;
+		font-family: "Atkinson Hyperlegible", sans-serif;
 		font-size: 1rem;
-		font-weight: 300;
+		font-weight: 400;
 		line-height: 1.65;
 	}
 
@@ -3668,11 +3678,11 @@ input, select, textarea {
 		.banner.style2 .content {
 			padding: 5.25rem 5.25rem 3.25rem 5.25rem ;
 			position: relative;
-			width: 40rem;
-			max-width: 100%;
+			width: 45rem;
+			max-width: 80%;
 			background-color: inherit;
 			border-radius: 0.5rem;
-			margin-bottom: 2rem;
+			margin-bottom: -17.5rem;
 			z-index: 1;
 		}
 
@@ -3850,8 +3860,8 @@ input, select, textarea {
 			-webkit-flex-shrink: 0;
 			-ms-flex-shrink: 0;
 			flex-shrink: 0;
-			width: 21rem;
-			height: 21rem;
+			width: 25rem;
+			height: 25rem;
 			border-radius: 100%;
 			margin: 0 3.5rem 2rem 0;
 		}
@@ -4282,7 +4292,7 @@ input, select, textarea {
 			position: relative;
 			width: 40rem;
 			max-width: 100%;
-			margin-bottom: 2rem;
+			margin-bottom: -30rem; /*2rem*/
 			z-index: 1;
 		}
 
@@ -4301,7 +4311,7 @@ input, select, textarea {
 			top: 0;
 			left: 0;
 			border-radius: 0;
-			opacity: 0.5;
+			opacity: 0.95; /*0.5*/
 		}
 
 			.banner.style5 .image img {
@@ -6710,7 +6720,7 @@ input, select, textarea {
 		}
 
 			.gallery.style2 a:hover {
-				color: #47D3E5;
+				color: #132234;
 			}
 
 		.gallery.style2 strong, .gallery.style2 b {
@@ -6749,8 +6759,8 @@ input, select, textarea {
 			.gallery.style2 input[type="button"]:hover,
 			.gallery.style2 button:hover,
 			.gallery.style2 .button:hover {
-				box-shadow: inset 0 0 0 1px #47D3E5;
-				color: #47D3E5 !important;
+				box-shadow: inset 0 0 0 1px #132234;
+				color: #132234 !important;
 			}
 
 			.gallery.style2 input[type="submit"]:active,
@@ -6759,8 +6769,8 @@ input, select, textarea {
 			.gallery.style2 button:active,
 			.gallery.style2 .button:active {
 				background-color: rgba(71, 211, 229, 0.2);
-				box-shadow: inset 0 0 0 1px #47D3E5;
-				color: #47D3E5 !important;
+				box-shadow: inset 0 0 0 1px #132234;
+				color: #132234 !important;
 			}
 
 			.gallery.style2 input[type="submit"].primary,
@@ -6770,7 +6780,7 @@ input, select, textarea {
 			.gallery.style2 .button.primary {
 				background-color: #ffffff;
 				box-shadow: none;
-				color: #000000 !important;
+				color: #ffffff !important;
 			}
 
 				.gallery.style2 input[type="submit"].primary:hover,
@@ -6778,7 +6788,7 @@ input, select, textarea {
 				.gallery.style2 input[type="button"].primary:hover,
 				.gallery.style2 button.primary:hover,
 				.gallery.style2 .button.primary:hover {
-					background-color: #47D3E5;
+					background-color: #132234;
 				}
 
 				.gallery.style2 input[type="submit"].primary:active,
@@ -6786,7 +6796,7 @@ input, select, textarea {
 				.gallery.style2 input[type="button"].primary:active,
 				.gallery.style2 button.primary:active,
 				.gallery.style2 .button.primary:active {
-					background-color: #1ebdd1;
+					background-color: #132234;
 				}
 
 		.gallery.style2 > .forward, .gallery.style2 > .backward {
@@ -8593,6 +8603,11 @@ input, select, textarea {
 		#wrapper > .color8 {
 			background-color: #FCF8F3;
 		}
+
+			#wrapper > .color9 {
+			background-color: #132234;
+		}
+
 
 		#wrapper.divided > * {
 			box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.075);
