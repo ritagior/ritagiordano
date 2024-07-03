@@ -3895,6 +3895,21 @@ input, select, textarea {
 				border-radius: 100%;
 			}
 
+		.banner.style3 .image h2{
+      z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 70px;
+    width: 260%;
+    height: 26px;
+    padding: 0;
+    margin: 0;
+    margin-top: -110px; /* 1/2 height */
+    text-align: center;
+    }
+
 		@media screen and (max-width: 1680px) {
 
 			.banner.style3 {
@@ -3922,6 +3937,21 @@ input, select, textarea {
 					height: 18.375rem;
 				}
 
+				.banner.style3 .image h2{
+      z-index: 2;
+    position: absolute;
+    top: 0;
+    left: -1;
+    right: -8;
+    /*font-size: 20px;*/
+    width: 112%;
+    height: 26px;
+    padding: 0;
+    margin: 0;
+    margin-top: -60px; /* 1/2 height */
+    text-align: center;
+    }
+
 		}
 
 		@media screen and (max-width: 736px) {
@@ -3939,6 +3969,21 @@ input, select, textarea {
 					height: 15.75rem;
 					margin: 0 2rem 2rem 0;
 				}
+
+				.banner.style3 .image h2{
+      z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 30px;
+    width: 100%;
+    height: 26px;
+    padding: 0;
+    margin: 0;
+    margin-top: -80px; /* 1/2 height */
+    text-align: center;
+    }
 
 		}
 
@@ -3965,6 +4010,21 @@ input, select, textarea {
 					margin-right: 0;
 				}
 
+				.banner.style3 .image h1{
+      z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    /*font-size: 20px;*/
+    width: 100%;
+    height: 26px;
+    padding: 0;
+    margin: 0;
+    margin-top: -80px; /* 1/2 height */
+    text-align: center;
+    }
+
 		}
 
 		.banner.style3.fullscreen {
@@ -3981,6 +4041,21 @@ input, select, textarea {
 			.banner.style3.orient-left .image {
 				margin: 0 0 2rem 3.5rem;
 			}
+
+			.banner.style3 .image h1{
+      z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    /*font-size: 20px;*/
+    width: 100%;
+    height: 26px;
+    padding: 0;
+    margin: 0;
+    margin-top: -80px; /* 1/2 height */
+    text-align: center;
+    }
 
 			@media screen and (max-width: 736px) {
 
@@ -4002,6 +4077,20 @@ input, select, textarea {
 					.banner.style3.orient-left .image {
 						margin-left: 0;
 					}
+					.banner.style3 .image h1{
+      z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    /*font-size: 20px;*/
+    width: 100%;
+    height: 26px;
+    padding: 0;
+    margin: 0;
+    margin-top: -80px; /* 1/2 height */
+    text-align: center;
+    }
 
 			}
 
@@ -4019,6 +4108,20 @@ input, select, textarea {
 			-ms-object-position: left;
 			object-position: left;
 		}
+		.banner.style3 .image h1{
+      z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    /*font-size: 20px;*/
+    width: 100%;
+    height: 26px;
+    padding: 0;
+    margin: 0;
+    margin-top: -80px; /* 1/2 height */
+    text-align: center;
+    }
 
 		.banner.style3.image-position-right .image img {
 			-moz-object-position: right;
@@ -4026,6 +4129,20 @@ input, select, textarea {
 			-ms-object-position: right;
 			object-position: right;
 		}
+		.banner.style3 .image h1{
+      z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    /*font-size: 20px;*/
+    width: 100%;
+    height: 26px;
+    padding: 0;
+    margin: 0;
+    margin-top: -80px; /* 1/2 height */
+    text-align: center;
+    }
 
 /* Banner (style4) */
 
