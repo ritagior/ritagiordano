@@ -103,7 +103,7 @@ input, select, textarea {
 
 	body {
 		/*background: #ffffff;*/
-		background: #132234;
+		background: /*#F9F8F5*/#F9F8F5;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -157,7 +157,7 @@ input, select, textarea {
 
 	body {
 		background-color: #ffffff;
-		color: #132234;
+		color: /*#13223*/ #F9F8F5;
 
 	}
 
@@ -223,6 +223,9 @@ input, select, textarea {
 
 	h2 {
 		font-size: 2.25rem;
+		/*width: 35.75rem;     /*aggiunto 22/10/2025*/
+    /*height: 3.0625rem;
+    /*flex-shrink: 0;*/
 	}
 
 	h3 {
@@ -345,11 +348,11 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #132234;
+		color: ##132234;
 	}
 
   p {
-    color: #132234;
+    color: /*#F9F8F5*/#132234;
   }
 
 	blockquote {
@@ -2214,8 +2217,8 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			box-shadow: inset 0 0 0 1px #5cb6e0;
-			color: #5cb6e0 !important;
+			box-shadow: inset 0 0 0 1px #FFBF5E;
+			color: #FFBF5E !important;
 		}
 
 		input[type="submit"]:active,
@@ -2224,8 +2227,8 @@ input, select, textarea {
 		button:active,
 		.button:active {
 			background-color: rgba(71, 211, 229, 0.2);
-			box-shadow: inset 0 0 0 1px #5cb6e0;
-			color: #5cb6e0 !important;
+			box-shadow: inset 0 0 0 1px #FFBF5E;
+			color: #FFBF5E !important;
 		}
 
 		input[type="submit"].primary,
@@ -2234,7 +2237,7 @@ input, select, textarea {
 		button.primary,
 		.button.primary {
 			/*background-color: #000000;*/
-			background-color: #D8E9F8;
+			background-color: #FFBF5E;
 			box-shadow: none;
 			color: #000000 !important; /*#ffffff*/
 		}
@@ -2252,7 +2255,7 @@ input, select, textarea {
 			input[type="button"].primary:active,
 			button.primary:active,
 			.button.primary:active {
-				background-color: #1ebdd1;
+				background-color: #FFBF5E;
 			}
 
 /* Form */
@@ -6861,7 +6864,7 @@ input, select, textarea {
 		}
 
 			.gallery.style2 a:hover {
-				color: #132234;
+				color: /*#F9F8F5*/ #F9F8F5;
 			}
 
 		.gallery.style2 strong, .gallery.style2 b {
@@ -6900,8 +6903,8 @@ input, select, textarea {
 			.gallery.style2 input[type="button"]:hover,
 			.gallery.style2 button:hover,
 			.gallery.style2 .button:hover {
-				box-shadow: inset 0 0 0 1px #132234;
-				color: #132234 !important;
+				box-shadow: inset 0 0 0 1px #F9F8F5;
+				color: #F9F8F5 !important;
 			}
 
 			.gallery.style2 input[type="submit"]:active,
@@ -6910,8 +6913,8 @@ input, select, textarea {
 			.gallery.style2 button:active,
 			.gallery.style2 .button:active {
 				background-color: rgba(71, 211, 229, 0.2);
-				box-shadow: inset 0 0 0 1px #132234;
-				color: #132234 !important;
+				box-shadow: inset 0 0 0 1px #F9F8F5;
+				color: #F9F8F5 !important;
 			}
 
 			.gallery.style2 input[type="submit"].primary,
@@ -6929,7 +6932,7 @@ input, select, textarea {
 				.gallery.style2 input[type="button"].primary:hover,
 				.gallery.style2 button.primary:hover,
 				.gallery.style2 .button.primary:hover {
-					background-color: #132234;
+					background-color: #F9F8F5;
 				}
 
 				.gallery.style2 input[type="submit"].primary:active,
@@ -6937,7 +6940,7 @@ input, select, textarea {
 				.gallery.style2 input[type="button"].primary:active,
 				.gallery.style2 button.primary:active,
 				.gallery.style2 .button.primary:active {
-					background-color: #132234;
+					background-color: #F9F8F5;
 				}
 
 		.gallery.style2 > .forward, .gallery.style2 > .backward {
@@ -7021,7 +7024,8 @@ input, select, textarea {
 			-ms-flex-shrink: 0;
 			flex-shrink: 0;
 			display: block;
-			position: relative;
+			/*position: relative;*/
+			position: sticky;
 			overflow: hidden;
 			width: 22.5rem;
 			max-width: 75vw;
@@ -8747,7 +8751,7 @@ input, select, textarea {
 		}
 
 			#wrapper > .color9 {
-			background-color: #132234;
+			background-color: #F9F8F5;
 		}
 
 
