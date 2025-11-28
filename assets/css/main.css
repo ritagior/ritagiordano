@@ -103,7 +103,7 @@ input, select, textarea {
 
 	body {
 		/*background: #ffffff;*/
-		background: /*#F9F8F5*/#F9F8F5;
+		background: /*#F9F8F5 #1A2E45*/ #F9F8F5;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -157,7 +157,7 @@ input, select, textarea {
 
 	body {
 		background-color: #ffffff;
-		color: /*#13223*/ #F9F8F5;
+		color: #1A2E45 /*#F9F8F5*/;
 
 	}
 
@@ -348,7 +348,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: ##132234;
+		color: #132234;
 	}
 
   p {
@@ -8751,7 +8751,7 @@ input, select, textarea {
 		}
 
 			#wrapper > .color9 {
-			background-color: #F9F8F5;
+			background-color: #1A2E45 /*#F9F8F5*/;
 		}
 
 
